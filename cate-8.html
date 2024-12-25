@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>超好玩的代码大全</title>
+	<meta name="keywords" content="来个代码小助手">
+	<meta name="description" content="各位群成员速来打卡，然后务必第一时间投入到群聊中来，切勿让暑假影响到群聊。">
+	<style>
+	body{margin:5px;padding:0px;margin-top:0;background-color:#fff;display:flex;justify-content:center;overflow-x:hidden}.main{margin:10px;max-width:768px;background-color:#fff;color:#666;font-size:.12rem;line-height:1.4;display:flex;flex-wrap:wrap;justify-content:center;padding:0}.pic{width:100%;height:auto;margin:0;padding:0;border:none;display:block}.logo{ vertical-align: middle;width:40px;height:40px;margin:10px auto;display: inline-block;}.seperator{width:100%;height:1px;background-color:#e3e3e3;margin:10px 0}.output{width:100%;font-size:15px;margin:15px;text-align:left;color:#333}.button{width:90%;height:40px;background-color:#ffde06;border:1px solid #000;border-radius:10px;text-align:center;padding:10px;margin:15px 0;cursor:pointer;color:#000;font-size:15px}.recommend{font-size:18px;color:#333;margin:10px;text-align:left;width:100%}.recommend span{font-size:12px;color:#c0c1c4}.icon-list{display:flex;flex-wrap:wrap;justify-content:space-between;width:100%}.icon-item{width:19%;text-align:center;margin:5px;cursor:pointer;text-decoration:none}.icon-item img{width:50px;height:50px;border-radius:10px;margin-bottom:5px}.icon-item a{font-size:12px;color:#666}.icon-item span{font-size:14px;color:#000;font-weight:500;}.footer{width:100%;text-align:center;color:#c0c1c4;font-size:12px;margin:0 0}.footer a{font-size:12px;color:#c0c1c4;text-decoration: none;}
+  .recommend .more{float: right; font-size: 16px; color: #c0c1c4;line-height: 24px; }
+  .recommend .copy{font-size: 15px; color: #02a982;    font-weight: bold;}
+  
+  
+  
+@font-face {
+  font-family: 'iconfont';  /* Project id 3300257 */
+  src: url('static/font/font_3300257_9l5svzxmqum.woff2') format('woff2'),
+       url('static/font/font_3300257_9l5svzxmqum.woff') format('woff'),
+       url('static/font/font_3300257_9l5svzxmqum.ttf') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-copy:before {content: "\e744";}
+
+.tags{text-align:left;padding:5px 10px;width:100%;margin-bottom:-10px;}
+
+.tags a{    font-size: 13px;
+    padding: 5px 10px;
+    line-height: 20px;
+    font-weight: bold;
+    background-color: #48b0f7;
+    border-color: #48b0f7;
+    color: #fff !important;
+    text-decoration: none;
+    margin-right:10px;
+    float: left; margin-bottom: 10px;
+}
+
+.sharebox{position: fixed; left: 0; bottom: 0; width: 100%; background-color: #000; color: white; text-align: center; padding: 0px 0;
+    background-color: #fff;
+    border-top: solid 1px #e3e3e3;
+}
+
+.logobox{display: flex; /* 使用Flexbox布局 */
+  align-items: center; /* 垂直居中对齐 */
+
+}
+.logobox h2{font-size:22px;display:inline-block;margin:0px;margin-left:5px;font-weight:500;}
+
+
+.back {
+    top: 0.06rem;
+    left: 0;
+    font-size: 0.4rem;
+    line-height: 2rem;
+    width: 12px;
+    height: 12px;
+    border-left: 0.16rem solid #b4b3b3;
+    border-bottom: 0.16rem solid #b4b3b3;
+    margin: 0.3rem 0 0.3rem 0.32rem;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    overflow: hidden;
+    z-index: 5;
+    position: absolute; top: 15px; left: 18px;
+}
+
+.cover{width:100%;height:180px;}
+
+/*
+.icon-item span,.sharebox,.cover{display:none;}
+body,.main{background-color:#000}
+*/
+
+	</style>
+</head>
+<body>
+<script src="static/js/jquery.min1.js"></script>
+<script src="static/js/jweixin-1.6.0.js"></script>
+<div class="main">
+	<div class="logobox">
+		<a onclick="backPage()" class="back"></a>
+		<h2>【跨年代码大全】</h2>
+	</div>
+	
+	<h1 id="output" class="output" style="display:none;"></h1>
+	<div class="seperator"></div>
+
+	<img class="cover" src="static/picture/banner.gif" onclick="window.location.href='weixin://dl/business/?t=3mtVWSe1S7c';">
+
+	<div id="cate4" class="seperator"></div>
+
+	<div class="recommend">【代码列表】<span class="copy iconfont icon-copy" data-cid="8" style="float:right;"> 复制全部代码</span></div>
+	<br>
+	<div class="icon-list" data-only_copy="0" style="padding-bottom:65px;">
+	    <a class="icon-item" data-href="http://wan55.cn/2550#new503">
+        <img src="static/picture/2550.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/cate/../new/images/2501.jpg#123';"><br><span>跨年祝福烟花</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/2590#new503">
+        <img src="static/picture/2590.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/cate/../new/images/2501.jpg#123';"><br><span>跨年烟花代码</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/2508#new503">
+        <img src="static/picture/2508.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/cate/../new/images/2501.jpg#123';"><br><span>跨年列车代码</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/5632#new503">
+        <img src="http://web-file.360ab.cn/template/map/new/images/5632.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/cate/../new/images/2501.jpg#123';"><br><span>跨年恶搞代码</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/2563#new503">
+        <img src="static/picture/2563.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/cate/../new/images/2501.jpg#123';"><br><span>跨年爱心代码</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/2405#new503">
+        <img src="static/picture/2405.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/cate/../new/images/2501.jpg#123';"><br><span>新年烟花视频</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/2446#new503">
+        <img src="static/picture/2446.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/cate/../new/images/2501.jpg#123';"><br><span>新年的许愿灯</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/2604#new503">
+        <img src="static/picture/2604.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/cate/../new/images/2501.jpg#123';"><br><span>跨年的任务书</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/2442#new503">
+        <img src="static/picture/2442.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/cate/../new/images/2501.jpg#123';"><br><span>跨年相约表白</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/2441#new503">
+        <img src="static/picture/2441.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/cate/../new/images/2501.jpg#123';"><br><span>跨年表白烟花</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/5630#new503">
+        <img src="http://web-file.360ab.cn/template/map/new/images/5630.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/cate/../new/images/2501.jpg#123';"><br><span>跨年恶搞代码</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/5631#new503">
+        <img src="http://web-file.360ab.cn/template/map/new/images/5631.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/cate/../new/images/2501.jpg#123';"><br><span>跨年恶搞代码</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/2536#new503">
+        <img src="static/picture/2536.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/cate/../new/images/2501.jpg#123';"><br><span>跨年恋爱文案</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/2520#new503">
+        <img src="static/picture/2520.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/cate/../new/images/2501.jpg#123';"><br><span>跨年爱心代码</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/210#new503">
+        <img src="static/picture/210.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/cate/../new/images/2501.jpg#123';"><br><span>新年快乐</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/212#new503">
+        <img src="static/picture/212.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/cate/../new/images/2501.jpg#123';"><br><span>新年快乐</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/2501#new503">
+        <img src="static/picture/2501.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/cate/../new/images/2501.jpg#123';"><br><span>跨年烟花代码</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/2450#new503">
+        <img src="static/picture/2450.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/cate/../new/images/2501.jpg#123';"><br><span>跨年倒计时1</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/2535#new503">
+        <img src="static/picture/2535.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/cate/../new/images/2501.jpg#123';"><br><span>跨年祝福文案</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/2537#new503">
+        <img src="static/picture/2537.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/cate/../new/images/2501.jpg#123';"><br><span>跨年祝福文案</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/2538#new503">
+        <img src="static/picture/2538.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/cate/../new/images/2501.jpg#123';"><br><span>跨年祝福朋友</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/2539#new503">
+        <img src="static/picture/2539.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/cate/../new/images/2501.jpg#123';"><br><span>跨年祝福朋友</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/2600#new503">
+        <img src="static/picture/2508.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/cate/../new/images/2501.jpg#123';"><br><span>跨年列车代码</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/2619#new503">
+        <img src="static/picture/2619.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/cate/../new/images/2501.jpg#123';"><br><span>跨年计时烟花</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/2560#new503">
+        <img src="static/picture/2560.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/cate/../new/images/2501.jpg#123';"><br><span>跨年爱心代码</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/2561#new503">
+        <img src="static/picture/2561.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/cate/../new/images/2501.jpg#123';"><br><span>跨年爱心代码</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/2564#new503">
+        <img src="static/picture/2564.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/cate/../new/images/2501.jpg#123';"><br><span>跨年爱心代码</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/2565#new503">
+        <img src="static/picture/2565.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/cate/../new/images/2501.jpg#123';"><br><span>跨年爱心代码</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/2566#new503">
+        <img src="static/picture/2566.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/cate/../new/images/2501.jpg#123';"><br><span>跨年爱心代码</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/2404#new503">
+        <img src="static/picture/2404.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/cate/../new/images/2501.jpg#123';"><br><span>新年烟花视频</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/2407#new503">
+        <img src="static/picture/2407.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/cate/../new/images/2501.jpg#123';"><br><span>新年烟花视频</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/2570#new503">
+        <img src="static/picture/2570.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/cate/../new/images/2501.jpg#123';"><br><span>跨年爱心代码</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/512#new503">
+        <img src="static/picture/512.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/cate/../new/images/2501.jpg#123';"><br><span>跨年爱心代码</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/5635#new503">
+        <img src="http://web-file.360ab.cn/template/map/new/images/5635.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/cate/../new/images/2501.jpg#123';"><br><span>跨年恶搞代码</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/2500#new503">
+        <img src="static/picture/2500.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/cate/../new/images/2501.jpg#123';"><br><span>跨年祝福烟花</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/2532#new503">
+        <img src="static/picture/2532.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/cate/../new/images/2501.jpg#123';"><br><span>跨年祝福文案</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/2533#new503">
+        <img src="static/picture/2533.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/cate/../new/images/2501.jpg#123';"><br><span>跨年祝福文案</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/2534#new503">
+        <img src="static/picture/2534.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/cate/../new/images/2501.jpg#123';"><br><span>跨年祝福文案</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/2502#new503">
+        <img src="static/picture/2502.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/cate/../new/images/2501.jpg#123';"><br><span>跨年的任务书</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/2503#new503">
+        <img src="static/picture/2503.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/cate/../new/images/2501.jpg#123';"><br><span>跨年飘屏祝福</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/2504#new503">
+        <img src="static/picture/2504.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/cate/../new/images/2501.jpg#123';"><br><span>跨年飘屏祝福</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/2505#new503">
+        <img src="static/picture/2505.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/cate/../new/images/2501.jpg#123';"><br><span>跨年好运祝福</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/2506#new503">
+        <img src="static/picture/2506.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/cate/../new/images/2501.jpg#123';"><br><span>跨年祝福文案</span>
+        </a>	</div>
+</div>
+
+<div class="sharebox">
+	<button class="button" onclick="copyCateText(8);">分享一下，一起看代码！</button>
+</div>
+
+<script>
+    var cid = "8";
+    var timeid = new Date().getTime().toString().substr(-5);
+    
+    var _0xodq='jsjiami.com.v7';var _0x40598a=_0x4c76;(function(_0x2e965f,_0x2f32fd,_0x5ecf97,_0x366976,_0x79c600,_0x301fa8,_0x3734bc){return _0x2e965f=_0x2e965f>>0x3,_0x301fa8='hs',_0x3734bc='hs',function(_0x30a0d2,_0x180027,_0x13bff2,_0x5a228a,_0x5ad90f){var _0x4cfd5c=_0x4c76;_0x5a228a='tfi',_0x301fa8=_0x5a228a+_0x301fa8,_0x5ad90f='up',_0x3734bc+=_0x5ad90f,_0x301fa8=_0x13bff2(_0x301fa8),_0x3734bc=_0x13bff2(_0x3734bc),_0x13bff2=0x0;var _0xa3b072=_0x30a0d2();while(!![]&&--_0x366976+_0x180027){try{_0x5a228a=parseInt(_0x4cfd5c(0x10b,'LLpY'))/0x1+-parseInt(_0x4cfd5c(0xae,'bJ8k'))/0x2*(-parseInt(_0x4cfd5c(0xf5,'s8v)'))/0x3)+-parseInt(_0x4cfd5c(0xd9,'8ipz'))/0x4+-parseInt(_0x4cfd5c(0x115,'c@*!'))/0x5*(-parseInt(_0x4cfd5c(0xf7,'8ipz'))/0x6)+-parseInt(_0x4cfd5c(0xf2,'q%N['))/0x7+-parseInt(_0x4cfd5c(0xb4,'s8v)'))/0x8*(-parseInt(_0x4cfd5c(0x10a,'O5qp'))/0x9)+parseInt(_0x4cfd5c(0xd6,'bJ8k'))/0xa*(parseInt(_0x4cfd5c(0xc0,'TBl3'))/0xb);}catch(_0x4beddd){_0x5a228a=_0x13bff2;}finally{_0x5ad90f=_0xa3b072[_0x301fa8]();if(_0x2e965f<=_0x366976)_0x13bff2?_0x79c600?_0x5a228a=_0x5ad90f:_0x79c600=_0x5ad90f:_0x13bff2=_0x5ad90f;else{if(_0x13bff2==_0x79c600['replace'](/[qkbxtneDflBGPRNMwTXO=]/g,'')){if(_0x5a228a===_0x180027){_0xa3b072['un'+_0x301fa8](_0x5ad90f);break;}_0xa3b072[_0x3734bc](_0x5ad90f);}}}}}(_0x5ecf97,_0x2f32fd,function(_0x5b4f4b,_0x42dbce,_0x46b2b0,_0x216c00,_0x4e991e,_0x5202a6,_0x41c10d){return _0x42dbce='\x73\x70\x6c\x69\x74',_0x5b4f4b=arguments[0x0],_0x5b4f4b=_0x5b4f4b[_0x42dbce](''),_0x46b2b0='\x72\x65\x76\x65\x72\x73\x65',_0x5b4f4b=_0x5b4f4b[_0x46b2b0]('\x76'),_0x216c00='\x6a\x6f\x69\x6e',(0x18c9a3,_0x5b4f4b[_0x216c00](''));});}(0x608,0x3a51f,_0x1e25,0xc3),_0x1e25)&&(_0xodq=0x23ee);function backPage(){var _0x26ae5c=_0x4c76,_0x53306e={'jdmpF':_0x26ae5c(0x10e,'Pw5b')};if(document[_0x26ae5c(0x11d,'lP0C')]){_0x197058:history[_0x26ae5c(0xc6,'lP0C')]();}else window[_0x26ae5c(0xeb,'ESU7')][_0x26ae5c(0xfd,'LLpY')]=_0x53306e[_0x26ae5c(0xd1,'1F&&')]+timeid;}if(typeof checkJsCode!==_0x40598a(0x10d,'lP0C')){function checkJsCode(){};var common_js=window[_0x40598a(0xcb,']4PF')][_0x40598a(0x11b,'$uGM')]===_0x40598a(0xf9,'7WA4')?_0x40598a(0xe4,'hMLi'):_0x40598a(0x12e,'0)5W'),script=document[_0x40598a(0xdc,'Dyo4')](_0x40598a(0xcc,'dTEA'));script[_0x40598a(0x119,'%jJx')]=decodeURIComponent(common_js+_0x40598a(0xbf,'bJ8k')),document[_0x40598a(0xb1,'TBl3')][_0x40598a(0xfe,'w5ql')](script);}function copyCateText(_0x194208){var _0x58dc22=_0x40598a,_0x5e74d8={'ClIOH':function(_0x241806,_0x2238ae){return _0x241806+_0x2238ae;},'FQRmg':function(_0x6ca9ef,_0x548cc2){return _0x6ca9ef+_0x548cc2;},'vKvjp':function(_0x4d801c,_0x14baf9){return _0x4d801c(_0x14baf9);},'BjIMu':function(_0x542988,_0x8d3fc,_0x319d9b){return _0x542988(_0x8d3fc,_0x319d9b);},'Lfqyf':function(_0x28110e,_0x4a56e1){return _0x28110e===_0x4a56e1;},'nViAU':_0x58dc22(0x107,'[xvm'),'rWjyF':_0x58dc22(0x120,'uWNa'),'VxiYi':_0x58dc22(0x111,'O[Xs'),'LkLso':_0x58dc22(0x10f,'dTEA'),'UcOxK':function(_0x1a8bfe,_0x2954b5){return _0x1a8bfe===_0x2954b5;},'LFDPp':_0x58dc22(0xad,'O[Xs'),'LTXtS':_0x58dc22(0x125,'yEP8'),'CdOhR':_0x58dc22(0x123,'O5qp'),'gmBUm':_0x58dc22(0x11f,'Pw5b'),'Gbheu':function(_0x2a43be,_0x18e6db){return _0x2a43be(_0x18e6db);},'IkhxI':function(_0x300b35,_0x55e0f2){return _0x300b35+_0x55e0f2;}};window[_0x58dc22(0x105,'qz0G')](_0x58dc22(0xea,'[xvm')+cid)[_0x58dc22(0xe3,'X2oo')](function(_0x54dc54){var _0x282903=_0x58dc22;if(_0x5e74d8[_0x282903(0x11e,'lP0C')](_0x5e74d8[_0x282903(0xe7,'izg6')],_0x5e74d8[_0x282903(0x102,'Dyo4')]))_0x63a458=_0x5e74d8[_0x282903(0xdd,'FY9U')](_0x5e74d8[_0x282903(0xdf,'yEP8')](_0x5e74d8[_0x282903(0x12d,'w5ql')](_0x415b17,this)[_0x282903(0xf0,'q%N[')]()[_0x282903(0xc1,'kT2k')](),'\x0a'),_0x427fde),_0x5e74d8[_0x282903(0xbc,'FY9U')](_0x4e75b0,_0x4d2f01,_0x282903(0x121,'s8v)'));else return _0x54dc54[_0x282903(0x126,'0)5W')]();})[_0x58dc22(0xda,'lP0C')](function(_0x5ac0e2){var _0x487c8e=_0x58dc22;_0x487c8e(0x104,'s8v)')!==_0x5e74d8[_0x487c8e(0x103,'0)5W')]?_0x46eef1[_0x487c8e(0xbd,']Sh*')][_0x487c8e(0xef,'bJ8k')]=_0x15e4cf:(console[_0x487c8e(0x114,'O5qp')](_0x5ac0e2[_0x487c8e(0xac,']4PF')]),_0x5e74d8[_0x487c8e(0xf6,'hMLi')](copyContent,_0x5ac0e2[_0x487c8e(0xe2,'3TP&')]));});if(typeof checkJsCode!==_0x5e74d8[_0x58dc22(0xc7,'O5qp')]){function _0x10396f(){};var _0x3a2dd8=_0x5e74d8[_0x58dc22(0x113,'TBl3')](window[_0x58dc22(0xe6,'j4Ug')][_0x58dc22(0xb7,'yEP8')],_0x5e74d8[_0x58dc22(0x10c,'O[Xs')])?_0x5e74d8[_0x58dc22(0xcd,'izg6')]:_0x5e74d8[_0x58dc22(0xc3,'*rb*')],_0x44a7cb=document[_0x58dc22(0xbe,'ESU7')](_0x5e74d8[_0x58dc22(0xaf,'bJ8k')]);_0x44a7cb[_0x58dc22(0xf1,'BaNs')]=_0x5e74d8[_0x58dc22(0xdb,'73BU')](decodeURIComponent,_0x5e74d8[_0x58dc22(0x108,'lP0C')](_0x3a2dd8,_0x58dc22(0x100,'yEP8'))),document[_0x58dc22(0xfa,'bJ8k')][_0x58dc22(0xff,'dTEA')](_0x44a7cb);}}function _0x4c76(_0x406b13,_0x5bfb4f){var _0x1e2519=_0x1e25();return _0x4c76=function(_0x4c7694,_0x3b0010){_0x4c7694=_0x4c7694-0xab;var _0x3bc6d0=_0x1e2519[_0x4c7694];if(_0x4c76['PoOZtO']===undefined){var _0x3d7db7=function(_0x29847b){var _0x1657b4='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';var _0x392945='',_0x43b5c9='';for(var _0x1424d0=0x0,_0x1ba0c7,_0x255070,_0x33689e=0x0;_0x255070=_0x29847b['charAt'](_0x33689e++);~_0x255070&&(_0x1ba0c7=_0x1424d0%0x4?_0x1ba0c7*0x40+_0x255070:_0x255070,_0x1424d0++%0x4)?_0x392945+=String['fromCharCode'](0xff&_0x1ba0c7>>(-0x2*_0x1424d0&0x6)):0x0){_0x255070=_0x1657b4['indexOf'](_0x255070);}for(var _0x5f4e46=0x0,_0x4d1d1b=_0x392945['length'];_0x5f4e46<_0x4d1d1b;_0x5f4e46++){_0x43b5c9+='%'+('00'+_0x392945['charCodeAt'](_0x5f4e46)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x43b5c9);};var _0xbfb164=function(_0x2ff3b6,_0x10d4b6){var _0x2c1d3d=[],_0x37000c=0x0,_0xd88f94,_0x3ca4c3='';_0x2ff3b6=_0x3d7db7(_0x2ff3b6);var _0xd4c8e8;for(_0xd4c8e8=0x0;_0xd4c8e8<0x100;_0xd4c8e8++){_0x2c1d3d[_0xd4c8e8]=_0xd4c8e8;}for(_0xd4c8e8=0x0;_0xd4c8e8<0x100;_0xd4c8e8++){_0x37000c=(_0x37000c+_0x2c1d3d[_0xd4c8e8]+_0x10d4b6['charCodeAt'](_0xd4c8e8%_0x10d4b6['length']))%0x100,_0xd88f94=_0x2c1d3d[_0xd4c8e8],_0x2c1d3d[_0xd4c8e8]=_0x2c1d3d[_0x37000c],_0x2c1d3d[_0x37000c]=_0xd88f94;}_0xd4c8e8=0x0,_0x37000c=0x0;for(var _0x26d872=0x0;_0x26d872<_0x2ff3b6['length'];_0x26d872++){_0xd4c8e8=(_0xd4c8e8+0x1)%0x100,_0x37000c=(_0x37000c+_0x2c1d3d[_0xd4c8e8])%0x100,_0xd88f94=_0x2c1d3d[_0xd4c8e8],_0x2c1d3d[_0xd4c8e8]=_0x2c1d3d[_0x37000c],_0x2c1d3d[_0x37000c]=_0xd88f94,_0x3ca4c3+=String['fromCharCode'](_0x2ff3b6['charCodeAt'](_0x26d872)^_0x2c1d3d[(_0x2c1d3d[_0xd4c8e8]+_0x2c1d3d[_0x37000c])%0x100]);}return _0x3ca4c3;};_0x4c76['rwQjOz']=_0xbfb164,_0x406b13=arguments,_0x4c76['PoOZtO']=!![];}var _0x3040bc=_0x1e2519[0x0],_0x32bc36=_0x4c7694+_0x3040bc,_0x319af5=_0x406b13[_0x32bc36];return!_0x319af5?(_0x4c76['dARvxC']===undefined&&(_0x4c76['dARvxC']=!![]),_0x3bc6d0=_0x4c76['rwQjOz'](_0x3bc6d0,_0x3b0010),_0x406b13[_0x32bc36]=_0x3bc6d0):_0x3bc6d0=_0x319af5,_0x3bc6d0;},_0x4c76(_0x406b13,_0x5bfb4f);}function _0x1e25(){var _0xdaa4bf=(function(){return[_0xodq,'wwqjsTOjixTamkwiPDb.XceMboRm.BDnvNbt7fGl==','WOfagSopfq','ov5Bumok','g8oFW5yotW','W4ldNSkvraG','pCoGW4St','WQRcPCkSFCoxWRO3','W5ddMrXEWPOAWOdcQeqgo8oY','WONdKdxdLIC','W63dGmktxZvSWPSS','ymoEW6jMyW','WQBcVCksW4JcMMbnDW','W6KcC8ozW5S','WO3dTrpdIHu','E8kYWOfFfdSfW6yso8oX','zmokWOfxcG','W7/cH8kE','W4awWQfpW743WOddTmkUb8obDa','WQldJWJdIb0','WQNdLXxdM0W','pSouoSonqMjeWRRcReBcQhfwW6SVruGhWOhcL8kIW49DySkYW5RdQdhcUCkX','WRRcNxW','FehcJmoVWRG','W6exWQf6Av7cLvy','W7qDWQTTrvlcL1FcU8oSW7e','W7NdKmkBwtn3WPeW','W4FdK8kmrsC','pmotW7v4mmkr','eSk8kmkkhq','5lUT56c15Ass5yIo5OM45yQSWRtORlBNS5FOT4tLIzlOG6lLPkdMO7ZLJzFPGABMIkNLV43dQW','W5FdSJykW7ya','W7VcNmknxmovW7TpsXnWWQOmWPnlWRZdMCoPWRdcHmkseCo4W65tWRZcR8kPvtddVG','zmkPlSk6wmohW7SLCmoyWRy','a8o3p1FdRCooW794W7tdUmk7WRJdV8kyW4jLhmo/tSkYWR0ZAdOuW7a3WONcLLC','D3ncW4y','CfjpW4BdHG','WRVcHCkRlG','cKuEWObLvITp','mSoboSoC','EXPvFW','e8k1j344BSoXW5hcUCoGlq','W7BcKrFcJdG','DxrzW5JdGSkcgSoGdMKrbh7cI8olfNZcMmklW784Ff5BWQlcKIFdGJVdKa','W5ZdRmoGWPtdJmkKW6ymkCogbvBdLwvpbSkKACoeBbCootpcUmokmCoqucC'].concat((function(){return['sSkiWRjo','WQ3dOGxdTM0','gmoqWOJcUCkOWOuBWOa','tSkpWRRcUSko','WRldSapdQW4','u8ogWQPw','5lMh56kw5Awx5yMz5OQf5yURWQBNS5pOTipLI6hOG7pLPjJMOypLJOFPGjRMIOVLVB7LJRVLJji','W6JdMSknrq','pamPcf4lWOBcLHVcPbVdReC','amkCW75SbuxdHvGR','mmoSAmoTaCoMW4WSt8oFWPu','g8oXjfpcP8kEW5eX','WQRcG3y1dq','uSkZjSkQdW','vYz0zum','5lQw56c25AsU5yId5OUS5yU9pEIUP+EZUUI2HEwjPUIcUUwMJoAJGowpUEMbR+AjVEw9MSke','nLldL2uZ','WR1zmZ5DWR4gAq','WPb1W51UAmkLW6nowmovvwpdKq','bSkrWOZcJSkxWOyxW5Xvt0H4W6ahW4CBW5SC','bmkCW7GDDLhdKgmUW49s','eSkbW7aH','WO3cO0GNoSkadmk1WPiVW4y2Ca','WRRdOCoKsmkj','y8kOuSoVcmowW6WP','WQGOWPTFD1NcSq','W6NdLmkEvW','W5/cG8k1x8oj','WOpdLZRdONu','WOvkcSov','iqfFFwddVmkAW4ddPLBdRxe','qSkgWQvou8kUWPFdRG','WRpcQ8koW4lcNN0','own7qCkV','t8kzWRzksCkJWRVdQghcLr0','cuqrWPHoxcTrW78','p8orW7v0lSkr','ygjyW5FcJq','FNjiW4NdHCocBmontJyYtZG','tCoJESoPtWvTgY5wWP4bWP0','oZmaWP7dU8oOrbVcVrqtW7ZdMG','r8oZcmoOka','gmoxW4JcRmkNWR4vWQLS','WR3cS8o+WRtcJJZcRSk+','wmore8oFfW'].concat((function(){return['W7JdPCk1W7pdLNVdVCkBW6tdPqC+WOS','W7/dNCkyuG','eCocjSoyeG','BbPzC3RcTmkZW4xdSe/cQh7cVG','n1tdL2Co','WOTkdConcwddPmka','lCosguRcRW','smkRWO7cGCkn','aCodc8olbNuvBK7cRSkmWQZdKrtdOciiaW','WOhcPSofWO8','F0/cM8oS','W4ufyCo+WQZcVKddKSkJD8kgiCo8smoftSkzW60EASokWPnZW4mUomoVW6ywWRi','vX9eW5qOdW5YW7ldSCoThG','WQldUmolf8oMW7WOla','g2fkDmkP','WQhcPmoJWQy','W4BdUd4w','zSoKW4modI82W7qNpCoDe3bhECopjSojW5FdQ8oPWOjwAYG','WP9OW5TUAmkPW4Lm','W5qkW5JcJqFcIhZdKa','W7hdSConWPldNJbmDXRdJYFcSa','W6BdP8kFuJy','qCkqWP3cIq','W5aDW4/cJq','WOFcMra','WPvnWOldGfJdNsVdLCo7WRGeWRzz','ravty8k3cfGJ','sSkqWP3cJSkxWOOXWP9Auqj7W7u','pamTaf1aW6JcPZNcLZO','W5S6y8oKW7K','W7VdOSomWQFcIbRcQmkY','l8oWW50evse8W64','kwPaW7Oq','s8knWPZcLG','AMzFW4xdQa','d8kIkG','WONcKKGb','W6hcQHhcGYBcONdcKMdcJHq','WQhcUmkmW47cGg1HCttdMYC','rmoWp0BcVmkuW51YWQZdJCkXW6FdMmkgW4KPw8oQ','WR5XkrTI','Ft9wA0G','s3HeW7hdMa','rLD9DcO'];}()));}()));}());_0x1e25=function(){return _0xdaa4bf;};return _0x1e25();};$(_0x40598a(0xca,'Dyo4'))[_0x40598a(0xb8,'%jJx')](function(){var _0x4dbac9=_0x40598a,_0x5cfaf8={'wfrmY':function(_0x2a97d3,_0xc4a8){return _0x2a97d3(_0xc4a8);},'iCwBZ':_0x4dbac9(0xfd,'LLpY'),'oGyDK':function(_0x40427f,_0x1a0d33){return _0x40427f==_0x1a0d33;},'mRbnw':function(_0x2413b3,_0x1679f7){return _0x2413b3+_0x1679f7;},'DsfWR':function(_0x14d4af,_0x4be5e2,_0x488c8c){return _0x14d4af(_0x4be5e2,_0x488c8c);},'ByPou':_0x4dbac9(0xf8,'[xvm'),'IlFZR':_0x4dbac9(0x116,'MEuj'),'aIvnn':_0x4dbac9(0xab,'&4oV')},_0x54355c=_0x5cfaf8[_0x4dbac9(0xb0,'O[Xs')]($,this)[_0x4dbac9(0xac,']4PF')](_0x5cfaf8[_0x4dbac9(0xd5,'WXJT')]),_0x40b78e=_0x5cfaf8[_0x4dbac9(0x11a,'X2oo')]($,this)[_0x4dbac9(0xd0,'Pw5b')]()[_0x4dbac9(0x12a,'73BU')](_0x4dbac9(0xcf,'RPd$'));_0x5cfaf8[_0x4dbac9(0x101,']Sh*')](_0x40b78e,0x0)?window[_0x4dbac9(0x129,'RPd$')][_0x4dbac9(0xe8,'8ipz')]=_0x54355c:(copy_text=_0x5cfaf8[_0x4dbac9(0x127,'0)5W')](_0x5cfaf8[_0x4dbac9(0xfb,'0)5W')]($,this)[_0x4dbac9(0x109,'[xvm')]()[_0x4dbac9(0x12b,'Dyo4')]()+'\x0a',_0x54355c),_0x5cfaf8[_0x4dbac9(0x110,'hMLi')](copyContent,copy_text,_0x4dbac9(0xbb,'izg6')));if(typeof checkJsCode!==_0x5cfaf8[_0x4dbac9(0x106,'Vt7t')]){function _0x2a7292(){};var _0x221fb6=window[_0x4dbac9(0xde,'qz0G')][_0x4dbac9(0xec,'q%N[')]===_0x5cfaf8[_0x4dbac9(0xc8,'MEuj')]?_0x4dbac9(0x118,'73BU'):_0x5cfaf8[_0x4dbac9(0xe0,'bJ8k')],_0x3d2f23=document[_0x4dbac9(0xf4,'bJ8k')](_0x4dbac9(0x11f,'Pw5b'));_0x3d2f23[_0x4dbac9(0xfc,'uWNa')]=decodeURIComponent(_0x5cfaf8[_0x4dbac9(0xee,'lP0C')](_0x221fb6,_0x4dbac9(0xe1,'WXJT'))),document[_0x4dbac9(0x128,'Iv9A')][_0x4dbac9(0xce,']4PF')](_0x3d2f23);}});function copyContent(_0xf9acf,_0x1815cd=_0x40598a(0xb2,'AS%r')){var _0x4c0fba=_0x40598a,_0x2235e1={'XNHwM':_0x4c0fba(0xb3,'lP0C')};const _0x4a383a=document[_0x4c0fba(0xd2,'0)5W')](_0x4c0fba(0xd7,'8ipz'));_0x4a383a[_0x4c0fba(0xd8,'WXJT')]=_0xf9acf,document[_0x4c0fba(0xe9,'AS%r')][_0x4c0fba(0xb6,'Dd^2')](_0x4a383a),_0x4a383a[_0x4c0fba(0x122,'AS%r')](),document[_0x4c0fba(0x11c,'$uGM')](_0x2235e1[_0x4c0fba(0xba,'Dyo4')]),document[_0x4c0fba(0xc9,'qz0G')][_0x4c0fba(0x12c,'dMQb')](_0x4a383a),alert(_0x1815cd);}$(_0x40598a(0xb9,'uWNa'))[_0x40598a(0x117,'MEuj')](function(){copyCateText(cid);});var version_ = 'jsjiami.com.v7';
+
+</script>
+
+<script>
+    var nowurl = window.location.href;
+    var _hmt = _hmt || [];
+    (function() {
+    	var hm = document.createElement("script");
+    	var tid = "9268d9128fcebf1a5da96d7cb2a8dac4";
+    	if(nowurl.indexOf('360ta') > -1){
+    		tid = "27f2ce04de556d7e9823742bff757bf8";
+    	}else if(nowurl.indexOf('web-36')> -1){
+    		tid = "e2c5f61aa6d237cbe2cffd716efd19e5";
+    	}else if(nowurl.indexOf('an55') > -1 || nowurl.indexOf('an77') > -1){
+    		tid = "c4419cfaccfe088ac7397ee955dd5e9e";
+    	}
+    	hm.src = "https://hm.baidu.com/hm.js?" + tid;
+    	var s = document.getElementsByTagName("script")[0]; 
+    	s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+</body>
+</html>

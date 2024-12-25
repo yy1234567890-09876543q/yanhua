@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>超好玩的代码大全</title>
+  <meta name="keywords" content="来个代码小助手">
+  <meta name="description" content="各位群成员速来打卡，然后务必第一时间投入到群聊中来，切勿让暑假影响到群聊。">
+  <style>
+  body{margin-top:0;background-color:#fff;display:flex;justify-content:center;overflow-x:hidden}.main{margin:10px;max-width:768px;background-color:#fff;color:#666;font-size:.12rem;line-height:1.4;display:flex;flex-wrap:wrap;justify-content:center;padding:0}.pic{width:100%;height:auto;margin:0;padding:0;border:none;display:block}.logo{ vertical-align: middle;width:40px;height:40px;margin:10px auto;display: inline-block;}.seperator{width:100%;height:1px;background-color:#e3e3e3;margin:10px 0}.output{width:100%;font-size:15px;margin:15px;text-align:left;color:#333}.button{width:90%;height:40px;background-color:#ffde06;border:1px solid #000;border-radius:10px;text-align:center;padding:10px;margin:15px 0;cursor:pointer;color:#000;font-size:15px}.recommend{font-size:18px;color:#333;margin:10px;text-align:left;width:100%}.recommend span{font-size:12px;color:#c0c1c4}.icon-list{display:flex;flex-wrap:wrap;justify-content:space-between;width:100%}.icon-item{width:19%;text-align:center;margin:5px;cursor:pointer;text-decoration:none}.icon-item img{width:50px;height:50px;border-radius:10px;margin-bottom:5px}.icon-item a{font-size:12px;color:#666}.icon-item span{font-size:14px;color:#000;font-weight:500;}.footer{width:100%;text-align:center;color:#c0c1c4;font-size:12px;margin:0 0}.footer a{font-size:12px;color:#c0c1c4;text-decoration: none;}
+  .recommend .more{float: right; font-size: 16px; color: #c0c1c4;line-height: 24px; }
+  .recommend .copy{font-size: 15px; color: #02a982;    font-weight: bold;}
+  
+  
+@font-face {
+  font-family: 'iconfont';  /* Project id 3300257 */
+  src: url('static/font/font_3300257_9l5svzxmqum.woff2') format('woff2'),
+       url('static/font/font_3300257_9l5svzxmqum.woff') format('woff'),
+       url('static/font/font_3300257_9l5svzxmqum.ttf') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-copy:before {content: "\e744";}
+
+.tags{text-align:left;padding:5px 10px;width:100%;margin-bottom:-10px;}
+
+.tags a{    font-size: 13px;
+    padding: 5px 10px;
+    line-height: 20px;
+    font-weight: bold;
+    background-color: #48b0f7;
+    border-color: #48b0f7;
+    color: #fff !important;
+    text-decoration: none;
+    margin-right:10px;
+    float: left; margin-bottom: 10px;
+}
+
+.sharebox{position: fixed; left: 0; bottom: 0; width: 100%; background-color: #000; color: white; text-align: center; padding: 0px 0;
+    background-color: #fff;
+    border-top: solid 1px #e3e3e3;
+}
+
+.logobox{display: flex; /* 使用Flexbox布局 */
+  align-items: center; /* 垂直居中对齐 */}
+.logobox h2{font-size:30px;display:inline-block;margin:0px;margin-left:5px;font-weight:500;}
+  </style>
+</head>
+<body>
+  <script src="static/js/jquery.min1.js"></script>  
+  <script src="static/js/jweixin-1.6.0.js"></script>
+  <div class="main">
+    <div class="logobox" onclick="window.location.href='weixin://dl/business/?t=3mtVWSe1S7c';">
+        <img src="static/picture/logo.jpg" class="logo">
+        <h2>代码制作</h2>
+    </div>
+    <h1 id="output" class="output" style="display:none;"></h1>
+    <div class="seperator"></div>
+    
+    <div class="tags">
+        <a class="btn btn-sm btn-info" href="#cate120"><i></i> #圣诞 </a><a class="btn btn-sm btn-info" href="#cate8"><i></i> #跨年 </a><a class="btn btn-sm btn-info" href="#cate121"><i></i> #平安夜 </a><a class="btn btn-sm btn-info" href="#cate4"><i></i> #爱心 </a><a class="btn btn-sm btn-info" href="#cate3"><i></i> #表白 </a><a class="btn btn-sm btn-info" href="#cate71"><i></i> #奶龙 </a><a class="btn btn-sm btn-info" href="#cate6"><i></i> #好玩 </a><a class="btn btn-sm btn-info" href="#cate9"><i></i> #春节 </a><a class="btn btn-sm btn-info" href="#cate7"><i></i> #整蛊 </a><a class="btn btn-sm btn-info" href="#cate2"><i></i> #恋爱 </a><a class="btn btn-sm btn-info" href="#cate70"><i></i> #熊出没 </a><a class="btn btn-sm btn-info" href="#cate115"><i></i> #教师节 </a><a class="btn btn-sm btn-info" href="#cate1"><i></i> #生日 </a><a class="btn btn-sm btn-info" href="#cate113"><i></i> #父亲节 </a><a class="btn btn-sm btn-info" href="#cate116"><i></i> #中秋节 </a><a class="btn btn-sm btn-info" href="#cate119"><i></i> #冬至 </a>        <!--<div style="display:block;font-size:16px;float: left;line-height:30px;"> 更多内容明日继续更新...</div>-->
+    </div>
+    
+    <div id="cate119" class="seperator"></div>
+    <div class="recommend">【热门代码】<!--<span class="copy iconfont icon-copy" data-cid="0"> 复制全部代码</span> <span class="more" data-cid="0">更多></span>--></div><br>
+    <div class="icon-list" data-only_copy="0">
+        
+        <a class="icon-item" data-href="http://accct.cn/2619E#1205">
+        <img src="static/picture/2619.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/2501.jpg#123
+';"><br><span>跨年倒数烟花</span>
+        </a><a class="icon-item" data-href="http://accct.cn/2600E#1205">
+        <img src="static/picture/2508.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/2501.jpg#123
+';"><br><span>跨年列车到站</span>
+        </a><a class="icon-item" data-href="http://accct.cn/2628AE#1205">
+        <img src="static/picture/2536.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/2501.jpg#123
+';"><br><span>公主请看烟花</span>
+        </a><a class="icon-item" data-href="http://accct.cn/2617#1205">
+        <img src="static/picture/512.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/2501.jpg#123
+';"><br><span>公主请跨年</span>
+        </a><a class="icon-item" data-href="http://accct.cn/2613#1205">
+        <img src="static/picture/2442.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/2501.jpg#123
+';"><br><span>2025你好！</span>
+        </a><a class="icon-item" data-href="http://accct.cn/2610#1205">
+        <img src="static/picture/2500.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/2501.jpg#123
+';"><br><span>绚烂跨年烟花</span>
+        </a><a class="icon-item" data-href="http://accct.cn/2611#1205">
+        <img src="static/picture/2561.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/2501.jpg#123
+';"><br><span>跨年朋友祝福</span>
+        </a><a class="icon-item" data-href="http://accct.cn/2607#1205">
+        <img src="static/picture/2533.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/2501.jpg#123
+';"><br><span>浪漫城堡烟花</span>
+        </a>
+        
+    </div>
+    
+        <div id="cate120" class="seperator"></div>
+    <div class="recommend">【圣诞节】<span class="copy iconfont icon-copy" data-cid="120"> 复制全部代码</span> <span class="more" data-cid="120">更多></span></div><br>
+    <div class="icon-list" data-only_copy="0">
+        <a class="icon-item" data-href="http://wan55.cn/585#0922">
+        <img src="http://web-file.360ab.cn/template/map/new/images/585.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/cate/120.jpg';"><br><span>圣诞的粉色树</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/583#0922">
+        <img src="http://web-file.360ab.cn/template/map/new/images/583.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/cate/120.jpg';"><br><span>圣诞的旋转树</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/580#0922">
+        <img src="http://web-file.360ab.cn/template/map/new/images/580.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/cate/120.jpg';"><br><span>圣诞的浪漫树</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/283#0922">
+        <img src="http://web-file.360ab.cn/template/map/new/images/283.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/cate/120.jpg';"><br><span>圣诞满屏文字</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/282#0922">
+        <img src="http://web-file.360ab.cn/template/map/new/images/282.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/cate/120.jpg';"><br><span>圣诞爱心代码</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/670#0922">
+        <img src="http://web-file.360ab.cn/template/map/new/images/670.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/cate/120.jpg';"><br><span>圣诞祝福代码</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/570#0922">
+        <img src="static/picture/570.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/cate/120.jpg';"><br><span>圣诞幸运之树</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/5310#0922">
+        <img src="http://web-file.360ab.cn/template/map/new/images/5310.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/cate/120.jpg';"><br><span>炫酷粒子圣诞树</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/572#0922">
+        <img src="http://web-file.360ab.cn/template/map/new/images/572.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/cate/120.jpg';"><br><span>圣诞爱神之树</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/574#0922">
+        <img src="http://web-file.360ab.cn/template/map/new/images/574.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/cate/120.jpg';"><br><span>圣诞许愿之树</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/573#0922">
+        <img src="http://web-file.360ab.cn/template/map/new/images/573.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/cate/120.jpg';"><br><span>圣诞快乐之树</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/571#0922">
+        <img src="http://web-file.360ab.cn/template/map/new/images/571.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/cate/120.jpg';"><br><span>圣诞未来之树</span>
+        </a>    </div>
+    
+        <div id="cate8" class="seperator"></div>
+    <div class="recommend">【跨年代码】<span class="copy iconfont icon-copy" data-cid="8"> 复制全部代码</span> <span class="more" data-cid="8">更多></span></div><br>
+    <div class="icon-list" data-only_copy="0">
+        <a class="icon-item" data-href="http://wan55.cn/2550#0922">
+        <img src="static/picture/2550.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/cate/../new/images/2501.jpg#123';"><br><span>跨年祝福烟花</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/2590#0922">
+        <img src="static/picture/2590.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/cate/../new/images/2501.jpg#123';"><br><span>跨年烟花代码</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/2508#0922">
+        <img src="static/picture/2508.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/cate/../new/images/2501.jpg#123';"><br><span>跨年列车代码</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/5632#0922">
+        <img src="http://web-file.360ab.cn/template/map/new/images/5632.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/cate/../new/images/2501.jpg#123';"><br><span>跨年恶搞代码</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/2563#0922">
+        <img src="static/picture/2563.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/cate/../new/images/2501.jpg#123';"><br><span>跨年爱心代码</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/2405#0922">
+        <img src="static/picture/2405.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/cate/../new/images/2501.jpg#123';"><br><span>新年烟花视频</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/2446#0922">
+        <img src="static/picture/2446.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/cate/../new/images/2501.jpg#123';"><br><span>新年的许愿灯</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/2604#0922">
+        <img src="static/picture/2604.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/cate/../new/images/2501.jpg#123';"><br><span>跨年的任务书</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/2442#0922">
+        <img src="static/picture/2442.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/cate/../new/images/2501.jpg#123';"><br><span>跨年相约表白</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/2441#0922">
+        <img src="static/picture/2441.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/cate/../new/images/2501.jpg#123';"><br><span>跨年表白烟花</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/5630#0922">
+        <img src="http://web-file.360ab.cn/template/map/new/images/5630.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/cate/../new/images/2501.jpg#123';"><br><span>跨年恶搞代码</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/5631#0922">
+        <img src="http://web-file.360ab.cn/template/map/new/images/5631.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/cate/../new/images/2501.jpg#123';"><br><span>跨年恶搞代码</span>
+        </a>    </div>
+    
+        <div id="cate121" class="seperator"></div>
+    <div class="recommend">【平安夜】<span class="copy iconfont icon-copy" data-cid="121"> 复制全部代码</span> <span class="more" data-cid="121">更多></span></div><br>
+    <div class="icon-list" data-only_copy="0">
+        <a class="icon-item" data-href="http://wan55.cn/588#0922">
+        <img src="http://web-file.360ab.cn/template/map/new/images/588.jpg" onerror="this.src='https://img0.baidu.com/it/u=3071265007,960428574&amp;fm=253&amp;fmt=auto&amp;app=120&amp;f=JPEG?w=650&amp;h=651';"><br><span>平安夜的祝福</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/587#0922">
+        <img src="http://web-file.360ab.cn/template/map/new/images/587.jpg" onerror="this.src='https://img0.baidu.com/it/u=3071265007,960428574&amp;fm=253&amp;fmt=auto&amp;app=120&amp;f=JPEG?w=650&amp;h=651';"><br><span>平安夜的祝福</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/589#0922">
+        <img src="http://web-file.360ab.cn/template/map/new/images/589.jpg" onerror="this.src='https://img0.baidu.com/it/u=3071265007,960428574&amp;fm=253&amp;fmt=auto&amp;app=120&amp;f=JPEG?w=650&amp;h=651';"><br><span>平安夜的祝福</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/590#0922">
+        <img src="http://web-file.360ab.cn/template/map/new/images/590.jpg" onerror="this.src='https://img0.baidu.com/it/u=3071265007,960428574&amp;fm=253&amp;fmt=auto&amp;app=120&amp;f=JPEG?w=650&amp;h=651';"><br><span>平安夜的祝福</span>
+        </a>    </div>
+    
+        <div id="cate4" class="seperator"></div>
+    <div class="recommend">【爱心代码】<span class="copy iconfont icon-copy" data-cid="4"> 复制全部代码</span> <span class="more" data-cid="4">更多></span></div><br>
+    <div class="icon-list" data-only_copy="0">
+        <a class="icon-item" data-href="http://wan55.cn/506#0922">
+        <img src="static/picture/506.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/cate/4.jpg';"><br><span>跳动爱心代码</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/509#0922">
+        <img src="http://web-file.360ab.cn/template/map/new/images/509.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/cate/4.jpg';"><br><span>表白的爱心树</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/526#0922">
+        <img src="static/picture/526.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/cate/4.jpg';"><br><span>语言爱心代码</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/5226#0922">
+        <img src="static/picture/5226.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/cate/4.jpg';"><br><span>烟花爱心代码</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/5223#0922">
+        <img src="static/picture/5223.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/cate/4.jpg';"><br><span>跳动爱心代码</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/5243#0922">
+        <img src="static/picture/5243.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/cate/4.jpg';"><br><span>飘屏爱心代码</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/527#0922">
+        <img src="http://web-file.360ab.cn/template/map/new/images/527.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/cate/4.jpg';"><br><span>最新爱心代码</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/5225#0922">
+        <img src="static/picture/5225.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/cate/4.jpg';"><br><span>璀璨爱心代码</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/5220#0922">
+        <img src="static/picture/5220.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/cate/4.jpg';"><br><span>跳动爱心代码</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/5229#0922">
+        <img src="static/picture/5229.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/cate/4.jpg';"><br><span>白色爱心代码</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/5224#0922">
+        <img src="static/picture/5224.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/cate/4.jpg';"><br><span>律动爱心代码</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/5221#0922">
+        <img src="static/picture/5221.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/cate/4.jpg';"><br><span>旋转爱心代码</span>
+        </a>    </div>
+    
+        <div id="cate3" class="seperator"></div>
+    <div class="recommend">【表白代码】<span class="copy iconfont icon-copy" data-cid="3"> 复制全部代码</span> <span class="more" data-cid="3">更多></span></div><br>
+    <div class="icon-list" data-only_copy="0">
+        <a class="icon-item" data-href="http://wan55.cn/500#0922">
+        <img src="static/picture/500.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/cate/3.jpg';"><br><span>花式表白代码</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/1557#0922">
+        <img src="static/picture/1557.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/cate/3.jpg';"><br><span>甜蜜恋爱表白</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/264#0922">
+        <img src="static/picture/264.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/cate/3.jpg';"><br><span>花式表白代码</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/253#0922">
+        <img src="static/picture/253.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/cate/3.jpg';"><br><span>霸气表白代码</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/263#0922">
+        <img src="static/picture/263.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/cate/3.jpg';"><br><span>英语花式表白</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/254#0922">
+        <img src="static/picture/254.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/cate/3.jpg';"><br><span>花式恋爱情话</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/261#0922">
+        <img src="static/picture/261.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/cate/3.jpg';"><br><span>表白藏头恶搞</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/1270#0922">
+        <img src="static/picture/1270.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/cate/3.jpg';"><br><span>认真表白情话</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/1215#0922">
+        <img src="static/picture/1215.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/cate/3.jpg';"><br><span>520表白代码</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/267#0922">
+        <img src="static/picture/267.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/cate/3.jpg';"><br><span>藏头表白代码</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/260#0922">
+        <img src="static/picture/267.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/cate/3.jpg';"><br><span>表白藏头代码</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/1544#0922">
+        <img src="http://web-file.360ab.cn/template/map/new/images/1544.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/cate/3.jpg';"><br><span>藏头表白代码</span>
+        </a>    </div>
+    
+        <div id="cate71" class="seperator"></div>
+    <div class="recommend">【奶龙代码】<span class="copy iconfont icon-copy" data-cid="71"> 复制全部代码</span> <span class="more" data-cid="71">更多></span></div><br>
+    <div class="icon-list" data-only_copy="1">
+        <a class="icon-item" data-href="http://wan55.cn/5603#0922">
+        <img src="http://web-file.360ab.cn/template/map/new/images/5603.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/cate/../new/images/2501.jpg#123';"><br><span>奶龙整蛊代码</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/5620#0922">
+        <img src="http://web-file.360ab.cn/template/map/new/images/5620.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/cate/../new/images/2501.jpg#123';"><br><span>奶龙整蛊代码</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/5607#0922">
+        <img src="http://web-file.360ab.cn/template/map/new/images/5607.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/cate/../new/images/2501.jpg#123';"><br><span>奶龙恶搞代码</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/5621#0922">
+        <img src="http://web-file.360ab.cn/template/map/new/images/5621.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/cate/../new/images/2501.jpg#123';"><br><span>奶龙整蛊代码</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/5605#0922">
+        <img src="http://web-file.360ab.cn/template/map/new/images/5605.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/cate/../new/images/2501.jpg#123';"><br><span>魔性奶龙代码</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/5600#0922">
+        <img src="http://web-file.360ab.cn/template/map/new/images/5600.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/cate/../new/images/2501.jpg#123';"><br><span>奶龙视频代码</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/5601#0922">
+        <img src="http://web-file.360ab.cn/template/map/new/images/5601.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/cate/../new/images/2501.jpg#123';"><br><span>我是奶龙代码</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/5602#0922">
+        <img src="http://web-file.360ab.cn/template/map/new/images/5602.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/cate/../new/images/2501.jpg#123';"><br><span>奶龙跳舞代码</span>
+        </a>    </div>
+    
+        <div id="cate6" class="seperator"></div>
+    <div class="recommend">【好玩代码】<span class="copy iconfont icon-copy" data-cid="6"> 复制全部代码</span> <span class="more" data-cid="6">更多></span></div><br>
+    <div class="icon-list" data-only_copy="1">
+        <a class="icon-item" data-href="http://wan55.cn/1024#0922">
+        <img src="static/picture/1024.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/cate/6.jpg';"><br><span>炫酷黑客代码</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/123#0922">
+        <img src="static/picture/123.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/cate/6.jpg';"><br><span>IKUN动图打球</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/272#0922">
+        <img src="static/picture/272.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/cate/6.jpg';"><br><span>迪迦红包封面</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/kt#0922">
+        <img src="static/picture/kt.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/cate/6.jpg';"><br><span>专属小空调</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/121#0922">
+        <img src="static/picture/121.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/cate/6.jpg';"><br><span>夏日清凉风扇</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/703#0922">
+        <img src="static/picture/2501.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/cate/6.jpg';"><br><span>寒假快乐烟花</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/122#0922">
+        <img src="static/picture/122.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/cate/6.jpg';"><br><span>冬日暖小太阳</span>
+        </a>    </div>
+    
+        <div id="cate9" class="seperator"></div>
+    <div class="recommend">【春节代码】<span class="copy iconfont icon-copy" data-cid="9"> 复制全部代码</span> <span class="more" data-cid="9">更多></span></div><br>
+    <div class="icon-list" data-only_copy="0">
+        <a class="icon-item" data-href="http://wan55.cn/2444#0922">
+        <img src="http://web-file.360ab.cn/template/map/new/images/2444.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/cate/../new/images/2501.jpg#123';"><br><span>新年真诚祝福</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/2443#0922">
+        <img src="http://web-file.360ab.cn/template/map/new/images/2443.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/cate/../new/images/2501.jpg#123';"><br><span>新年万事如意</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/2440#0922">
+        <img src="http://web-file.360ab.cn/template/map/new/images/2440.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/cate/../new/images/2501.jpg#123';"><br><span>新年开心祝福</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/2439#0922">
+        <img src="http://web-file.360ab.cn/template/map/new/images/2439.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/cate/../new/images/2501.jpg#123';"><br><span>龙年大吉祝福</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/2438#0922">
+        <img src="http://web-file.360ab.cn/template/map/new/images/2438.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/cate/../new/images/2501.jpg#123';"><br><span>新年美好祝愿</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/2437#0922">
+        <img src="http://web-file.360ab.cn/template/map/new/images/2437.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/cate/../new/images/2501.jpg#123';"><br><span>新年朋友祝福</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/2436#0922">
+        <img src="http://web-file.360ab.cn/template/map/new/images/2436.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/cate/../new/images/2501.jpg#123';"><br><span>新年团团圆圆</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/2435#0922">
+        <img src="http://web-file.360ab.cn/template/map/new/images/2435.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/cate/../new/images/2501.jpg#123';"><br><span>新年深情表白</span>
+        </a>    </div>
+    
+        <div id="cate7" class="seperator"></div>
+    <div class="recommend">【整蛊代码】<span class="copy iconfont icon-copy" data-cid="7"> 复制全部代码</span> <span class="more" data-cid="7">更多></span></div><br>
+    <div class="icon-list" data-only_copy="1">
+        <a class="icon-item" data-href="http://wan55.cn/hsh#0922">
+        <img src="static/picture/hsh.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/cate/7.jpg';"><br><span>黑神话在线玩</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/xzy#0922">
+        <img src="static/picture/xzy.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/cate/7.jpg';"><br><span>帮写暑假作业</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/726#0922">
+        <img src="static/picture/726.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/cate/7.jpg';"><br><span>开学调整状态</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/cha#0922">
+        <img src="static/picture/cha.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/cate/7.jpg';"><br><span>开学问卷调查</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/690#0922">
+        <img src="static/picture/690.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/cate/7.jpg';"><br><span>领取对象神器</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/697#0922">
+        <img src="static/picture/697.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/cate/7.jpg';"><br><span>在线复活牢大</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/yk#0922">
+        <img src="static/picture/yk.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/cate/7.jpg';"><br><span>主人遥控玩具</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/stu#0922">
+        <img src="static/picture/stu.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/cate/7.jpg';"><br><span>来个一点色图</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/719#0922">
+        <img src="static/picture/719.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/cate/7.jpg';"><br><span>你懂的网站🔥</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/700#0922">
+        <img src="static/picture/xzy.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/cate/7.jpg';"><br><span>寒假作业补救</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/710#0922">
+        <img src="static/picture/xzy.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/cate/7.jpg';"><br><span>寒假作业答案</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/688#0922">
+        <img src="static/picture/688.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/cate/7.jpg';"><br><span>寒假延长神器</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/708#0922">
+        <img src="static/picture/708.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/cate/7.jpg';"><br><span>神秘礼物恶搞</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/724#0922">
+        <img src="static/picture/724.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/cate/7.jpg';"><br><span>极品图片查看</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/722#0922">
+        <img src="static/picture/722.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/cate/7.jpg';"><br><span>惊天的大秘密</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/725#0922">
+        <img src="static/picture/722.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/cate/7.jpg';"><br><span>绝密音频资源</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/723#0922">
+        <img src="static/picture/723.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/cate/7.jpg';"><br><span>兽耳微露照片</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/721#0922">
+        <img src="static/picture/688.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/cate/7.jpg';"><br><span>寒假延长通知</span>
+        </a>    </div>
+    
+        <div id="cate2" class="seperator"></div>
+    <div class="recommend">【恋爱代码】<span class="copy iconfont icon-copy" data-cid="2"> 复制全部代码</span> <span class="more" data-cid="2">更多></span></div><br>
+    <div class="icon-list" data-only_copy="0">
+        <a class="icon-item" data-href="http://wan55.cn/270#0922">
+        <img src="static/picture/270.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/cate/2.jpg';"><br><span>I LOVE YOU</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/269#0922">
+        <img src="http://web-file.360ab.cn/template/map/new/images/269.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/cate/2.jpg';"><br><span>满屏文字表白</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/268#0922">
+        <img src="http://web-file.360ab.cn/template/map/new/images/268.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/cate/2.jpg';"><br><span>我心里只有你</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/505#0922">
+        <img src="http://web-file.360ab.cn/template/map/new/images/505.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/cate/2.jpg';"><br><span>深情恋爱情话</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/1566#0922">
+        <img src="http://web-file.360ab.cn/template/map/new/images/1566.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/cate/2.jpg';"><br><span>情侣恋爱合约</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/1548#0922">
+        <img src="http://web-file.360ab.cn/template/map/new/images/1548.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/cate/2.jpg';"><br><span>甜蜜恋爱想念</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/201#0922">
+        <img src="http://web-file.360ab.cn/template/map/new/images/201.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/cate/2.jpg';"><br><span>深情恋爱情话</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/1537#0922">
+        <img src="http://web-file.360ab.cn/template/map/new/images/1537.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/cate/2.jpg';"><br><span>可爱道歉代码</span>
+        </a>    </div>
+    
+        <div id="cate70" class="seperator"></div>
+    <div class="recommend">【熊出没代码】<span class="copy iconfont icon-copy" data-cid="70"> 复制全部代码</span> <span class="more" data-cid="70">更多></span></div><br>
+    <div class="icon-list" data-only_copy="1">
+        <a class="icon-item" data-href="http://wan55.cn/x2#0922">
+        <img src="http://web-file.360ab.cn/template/map/new/images/x2.jpg" onerror="this.src='https://img2.baidu.com/it/u=1022772626,2574777447&amp;fm=253&amp;fmt=auto&amp;app=138&amp;f=JPEG?w=456&amp;h=469';"><br><span>熊出没马牛*看电影</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/x1#0922">
+        <img src="http://web-file.360ab.cn/template/map/new/images/x1.jpg" onerror="this.src='https://img2.baidu.com/it/u=1022772626,2574777447&amp;fm=253&amp;fmt=auto&amp;app=138&amp;f=JPEG?w=456&amp;h=469';"><br><span>熊出没坤坤的手机</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/x3#0922">
+        <img src="http://web-file.360ab.cn/template/map/new/images/x3.jpg" onerror="this.src='https://img2.baidu.com/it/u=1022772626,2574777447&amp;fm=253&amp;fmt=auto&amp;app=138&amp;f=JPEG?w=456&amp;h=469';"><br><span>熊出没黑手之王</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/x4#0922">
+        <img src="http://web-file.360ab.cn/template/map/new/images/x4.jpg" onerror="this.src='https://img2.baidu.com/it/u=1022772626,2574777447&amp;fm=253&amp;fmt=auto&amp;app=138&amp;f=JPEG?w=456&amp;h=469';"><br><span>熊出没英语版1</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/x5#0922">
+        <img src="http://web-file.360ab.cn/template/map/new/images/x5.jpg" onerror="this.src='https://img2.baidu.com/it/u=1022772626,2574777447&amp;fm=253&amp;fmt=auto&amp;app=138&amp;f=JPEG?w=456&amp;h=469';"><br><span>熊出没英语版2</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/x15#0922">
+        <img src="http://web-file.360ab.cn/template/map/new/images/x15.jpg" onerror="this.src='https://img2.baidu.com/it/u=1022772626,2574777447&amp;fm=253&amp;fmt=auto&amp;app=138&amp;f=JPEG?w=456&amp;h=469';"><br><span>熊出没英语版12</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/x6#0922">
+        <img src="http://web-file.360ab.cn/template/map/new/images/x6.jpg" onerror="this.src='https://img2.baidu.com/it/u=1022772626,2574777447&amp;fm=253&amp;fmt=auto&amp;app=138&amp;f=JPEG?w=456&amp;h=469';"><br><span>熊出没英语版3</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/x7#0922">
+        <img src="http://web-file.360ab.cn/template/map/new/images/x7.jpg" onerror="this.src='https://img2.baidu.com/it/u=1022772626,2574777447&amp;fm=253&amp;fmt=auto&amp;app=138&amp;f=JPEG?w=456&amp;h=469';"><br><span>熊出没英语版4</span>
+        </a>    </div>
+    
+        <div id="cate115" class="seperator"></div>
+    <div class="recommend">【教师节】<span class="copy iconfont icon-copy" data-cid="115"> 复制全部代码</span> <span class="more" data-cid="115">更多></span></div><br>
+    <div class="icon-list" data-only_copy="0">
+        <a class="icon-item" data-href="http://2025k.cn/605#0922">
+        <img src="http://web-file.360ab.cn/template/map/new/images/605.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/cate/115.jpg';"><br><span>教师节</span>
+        </a><a class="icon-item" data-href="http://2025k.cn/606#0922">
+        <img src="http://web-file.360ab.cn/template/map/new/images/606.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/cate/115.jpg';"><br><span>教师节</span>
+        </a><a class="icon-item" data-href="http://2025k.cn/350#0922">
+        <img src="http://web-file.360ab.cn/template/map/new/images/350.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/cate/115.jpg';"><br><span>教师节</span>
+        </a><a class="icon-item" data-href="http://2025k.cn/351#0922">
+        <img src="http://web-file.360ab.cn/template/map/new/images/351.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/cate/115.jpg';"><br><span>教师节</span>
+        </a>    </div>
+    
+        <div id="cate1" class="seperator"></div>
+    <div class="recommend">【生日祝福】<span class="copy iconfont icon-copy" data-cid="1"> 复制全部代码</span> <span class="more" data-cid="1">更多></span></div><br>
+    <div class="icon-list" data-only_copy="0">
+        <a class="icon-item" data-href="http://wan55.cn/100#0922">
+        <img src="static/picture/100.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/cate/1.jpg';"><br><span>生日祝福代码</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/102#0922">
+        <img src="static/picture/102.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/cate/1.jpg';"><br><span>闺蜜生日祝福</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/103#0922">
+        <img src="static/picture/100.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/cate/1.jpg';"><br><span>兄弟生日祝福</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/105#0922">
+        <img src="static/picture/105.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/cate/1.jpg';"><br><span>妈妈生日祝福</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/104#0922">
+        <img src="static/picture/104.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/cate/1.jpg';"><br><span>爸爸生日祝福</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/101#0922">
+        <img src="static/picture/101.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/cate/1.jpg';"><br><span>生日祝福代码</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/107#0922">
+        <img src="static/picture/107.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/cate/1.jpg';"><br><span>姐姐生日祝福</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/106#0922">
+        <img src="static/picture/106.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/cate/1.jpg';"><br><span>长辈生日祝福</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/110#0922">
+        <img src="static/picture/110.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/cate/1.jpg';"><br><span>妹妹生日祝福</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/108#0922">
+        <img src="static/picture/108.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/cate/1.jpg';"><br><span>哥哥生日祝福</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/109#0922">
+        <img src="static/picture/100.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/cate/1.jpg';"><br><span>弟弟生日祝福</span>
+        </a><a class="icon-item" data-href="http://wan55.cn/112#0922">
+        <img src="static/picture/112.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/cate/1.jpg';"><br><span>老师生日祝福</span>
+        </a>    </div>
+    
+        <div id="cate113" class="seperator"></div>
+    <div class="recommend">【父亲节】<span class="copy iconfont icon-copy" data-cid="113"> 复制全部代码</span> <span class="more" data-cid="113">更多></span></div><br>
+    <div class="icon-list" data-only_copy="0">
+        <a class="icon-item" data-href="http://2025k.cn/671#0922">
+        <img src="http://web-file.360ab.cn/template/map/new/images/671.jpg" onerror="this.src='https://img1.baidu.com/it/u=2122116878,3487174199&amp;fm=253&amp;fmt=auto&amp;app=120&amp;f=PNG?w=320&amp;h=406';"><br><span>父亲节祝福</span>
+        </a><a class="icon-item" data-href="http://2025k.cn/602#0922">
+        <img src="http://web-file.360ab.cn/template/map/new/images/602.jpg" onerror="this.src='https://img1.baidu.com/it/u=2122116878,3487174199&amp;fm=253&amp;fmt=auto&amp;app=120&amp;f=PNG?w=320&amp;h=406';"><br><span>祝福父亲代码</span>
+        </a><a class="icon-item" data-href="http://2025k.cn/678#0922">
+        <img src="http://web-file.360ab.cn/template/map/new/images/678.jpg" onerror="this.src='https://img1.baidu.com/it/u=2122116878,3487174199&amp;fm=253&amp;fmt=auto&amp;app=120&amp;f=PNG?w=320&amp;h=406';"><br><span>父亲节祝福</span>
+        </a><a class="icon-item" data-href="http://2025k.cn/674#0922">
+        <img src="http://web-file.360ab.cn/template/map/new/images/674.jpg" onerror="this.src='https://img1.baidu.com/it/u=2122116878,3487174199&amp;fm=253&amp;fmt=auto&amp;app=120&amp;f=PNG?w=320&amp;h=406';"><br><span>父亲节祝福</span>
+        </a>    </div>
+    
+        <div id="cate116" class="seperator"></div>
+    <div class="recommend">【中秋节】<span class="copy iconfont icon-copy" data-cid="116"> 复制全部代码</span> <span class="more" data-cid="116">更多></span></div><br>
+    <div class="icon-list" data-only_copy="0">
+        <a class="icon-item" data-href="http://2025k.cn/187#0922">
+        <img src="http://web-file.360ab.cn/template/map/new/images/187.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/cate/116.jpg';"><br><span>中秋祝福视频</span>
+        </a><a class="icon-item" data-href="http://2025k.cn/186#0922">
+        <img src="http://web-file.360ab.cn/template/map/new/images/186.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/cate/116.jpg';"><br><span>中秋祝福视频</span>
+        </a><a class="icon-item" data-href="http://2025k.cn/182#0922">
+        <img src="http://web-file.360ab.cn/template/map/new/images/182.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/cate/116.jpg';"><br><span>中秋祝福烟花</span>
+        </a><a class="icon-item" data-href="http://2025k.cn/185#0922">
+        <img src="http://web-file.360ab.cn/template/map/new/images/185.jpg" onerror="this.src='http://web-file.360ab.cn/template/map/new/images/cate/116.jpg';"><br><span>中秋祝福视频</span>
+        </a>    </div>
+    
+        <div id="cate119" class="seperator"></div>
+    <div class="recommend">【冬至代码】<span class="copy iconfont icon-copy" data-cid="119"> 复制全部代码</span> <span class="more" data-cid="119">更多></span></div><br>
+    <div class="icon-list" data-only_copy="0">
+        <a class="icon-item" data-href="http://2025k.cn/1702#0922">
+        <img src="http://web-file.360ab.cn/template/map/new/images/1702.jpg" onerror="this.src='https://pic2.58cdn.com.cn/nowater/webim/big/n_v26e23a78e069d4abfa41f5ba549dc240a.jpg';"><br><span>提前祝你新年快乐</span>
+        </a><a class="icon-item" data-href="http://2025k.cn/1700#0922">
+        <img src="http://web-file.360ab.cn/template/map/new/images/1700.jpg" onerror="this.src='https://pic2.58cdn.com.cn/nowater/webim/big/n_v26e23a78e069d4abfa41f5ba549dc240a.jpg';"><br><span>跨年倒计时2</span>
+        </a><a class="icon-item" data-href="http://2025k.cn/1704#0922">
+        <img src="http://web-file.360ab.cn/template/map/new/images/1704.jpg" onerror="this.src='https://pic2.58cdn.com.cn/nowater/webim/big/n_v26e23a78e069d4abfa41f5ba549dc240a.jpg';"><br><span>跨年倒计时</span>
+        </a><a class="icon-item" data-href="http://2025k.cn/1705#0922">
+        <img src="http://web-file.360ab.cn/template/map/new/images/1705.jpg" onerror="this.src='https://pic2.58cdn.com.cn/nowater/webim/big/n_v26e23a78e069d4abfa41f5ba549dc240a.jpg';"><br><span>跨年倒计时</span>
+        </a><a class="icon-item" data-href="http://2025k.cn/1706#0922">
+        <img src="http://web-file.360ab.cn/template/map/new/images/1706.jpg" onerror="this.src='https://pic2.58cdn.com.cn/nowater/webim/big/n_v26e23a78e069d4abfa41f5ba549dc240a.jpg';"><br><span>跨年倒计时祝福</span>
+        </a><a class="icon-item" data-href="http://2025k.cn/1707#0922">
+        <img src="http://web-file.360ab.cn/template/map/new/images/1707.jpg" onerror="this.src='https://pic2.58cdn.com.cn/nowater/webim/big/n_v26e23a78e069d4abfa41f5ba549dc240a.jpg';"><br><span>2025倒计时祝福</span>
+        </a><a class="icon-item" data-href="http://2025k.cn/1708#0922">
+        <img src="http://web-file.360ab.cn/template/map/new/images/1708.jpg" onerror="this.src='https://pic2.58cdn.com.cn/nowater/webim/big/n_v26e23a78e069d4abfa41f5ba549dc240a.jpg';"><br><span>新年烟花祝福</span>
+        </a><a class="icon-item" data-href="http://2025k.cn/1709#0922">
+        <img src="http://web-file.360ab.cn/template/map/new/images/1709.jpg" onerror="this.src='https://pic2.58cdn.com.cn/nowater/webim/big/n_v26e23a78e069d4abfa41f5ba549dc240a.jpg';"><br><span>冬至欢愉常乐</span>
+        </a>    </div>
+    
+      </div>
+  
+<div class="sharebox">
+    <button class="button" onclick="copyText()">分享一下，一起看代码！</button>
+</div>
+
+<script>
+    var timeid = new Date().getTime().toString().substr(-5);
+    
+    var _0xodR='jsjiami.com.v7';var _0x3cbbcb=_0x3b70;(function(_0x482154,_0x2d6de0,_0x2e8b8d,_0x5d523f,_0x11a831,_0x28360a,_0x5d9900){return _0x482154=_0x482154>>0x5,_0x28360a='hs',_0x5d9900='hs',function(_0x38349d,_0x2a8804,_0xe8d22,_0x2136e2,_0x466f7b){var _0x1cba7b=_0x3b70;_0x2136e2='tfi',_0x28360a=_0x2136e2+_0x28360a,_0x466f7b='up',_0x5d9900+=_0x466f7b,_0x28360a=_0xe8d22(_0x28360a),_0x5d9900=_0xe8d22(_0x5d9900),_0xe8d22=0x0;var _0x518eb6=_0x38349d();while(!![]&&--_0x5d523f+_0x2a8804){try{_0x2136e2=-parseInt(_0x1cba7b(0x1de,'SGc!'))/0x1+parseInt(_0x1cba7b(0x161,'d]35'))/0x2*(-parseInt(_0x1cba7b(0x152,'rESQ'))/0x3)+parseInt(_0x1cba7b(0x16a,'[plQ'))/0x4*(-parseInt(_0x1cba7b(0x192,'8oM1'))/0x5)+parseInt(_0x1cba7b(0x1b1,'DSos'))/0x6+parseInt(_0x1cba7b(0x18d,'0tBi'))/0x7*(parseInt(_0x1cba7b(0x1a3,'FSZP'))/0x8)+parseInt(_0x1cba7b(0x156,'X8Ur'))/0x9*(-parseInt(_0x1cba7b(0x194,'9O9i'))/0xa)+parseInt(_0x1cba7b(0x16f,'SB4H'))/0xb*(parseInt(_0x1cba7b(0x1d4,'3$3%'))/0xc);}catch(_0x45109d){_0x2136e2=_0xe8d22;}finally{_0x466f7b=_0x518eb6[_0x28360a]();if(_0x482154<=_0x5d523f)_0xe8d22?_0x11a831?_0x2136e2=_0x466f7b:_0x11a831=_0x466f7b:_0xe8d22=_0x466f7b;else{if(_0xe8d22==_0x11a831['replace'](/[WkOKDrGClhnAVERbyBN=]/g,'')){if(_0x2136e2===_0x2a8804){_0x518eb6['un'+_0x28360a](_0x466f7b);break;}_0x518eb6[_0x5d9900](_0x466f7b);}}}}}(_0x2e8b8d,_0x2d6de0,function(_0x46df77,_0x2fbb2b,_0x5d7af6,_0xbf1890,_0x3617b6,_0x44f37c,_0x3dffe2){return _0x2fbb2b='\x73\x70\x6c\x69\x74',_0x46df77=arguments[0x0],_0x46df77=_0x46df77[_0x2fbb2b](''),_0x5d7af6='\x72\x65\x76\x65\x72\x73\x65',_0x46df77=_0x46df77[_0x5d7af6]('\x76'),_0xbf1890='\x6a\x6f\x69\x6e',(0x18c9b1,_0x46df77[_0xbf1890](''));});}(0x1840,0x59f40,_0xd628,0xc4),_0xd628)&&(_0xodR=0x1f82);$(_0x3cbbcb(0x1c2,'bJFQ'))[_0x3cbbcb(0x1b0,'rESQ')](function(){var _0x3c9d02=_0x3cbbcb,_0x1917ad={'gAoVn':function(_0x3eab00,_0xd7e8f){return _0x3eab00(_0xd7e8f);},'UiVPR':function(_0x59139c,_0x3be04c){return _0x59139c===_0x3be04c;},'mhpOm':_0x3c9d02(0x1b4,'LtLt'),'yVQOn':function(_0x48a7e3,_0x433be1){return _0x48a7e3(_0x433be1);},'NPIBo':_0x3c9d02(0x1dc,'[plQ'),'dqaPW':_0x3c9d02(0x153,'nUxA'),'fLULd':function(_0x4aadbe,_0x20dc45){return _0x4aadbe(_0x20dc45);},'OkXFH':function(_0x5a1ae6,_0x10d753){return _0x5a1ae6+_0x10d753;},'kMlNK':_0x3c9d02(0x186,'Gd!g'),'AckBq':_0x3c9d02(0x19c,'nUxA'),'OUNxx':function(_0x26b5ca,_0xb976bb){return _0x26b5ca(_0xb976bb);},'kyRDu':_0x3c9d02(0x1a5,'GCTR'),'vUMMM':_0x3c9d02(0x12c,'%8&L'),'WJMbP':_0x3c9d02(0x188,'bJFQ'),'oQaKC':_0x3c9d02(0x19e,'nUxA'),'ZbPVx':_0x3c9d02(0x18a,'SB4H'),'BcURJ':_0x3c9d02(0x178,'xkqE')},_0x250e96=_0x1917ad[_0x3c9d02(0x1b2,'7rhu')]($,this)[_0x3c9d02(0x1af,'96Jg')](_0x1917ad[_0x3c9d02(0x15e,'3$3%')]);window[_0x3c9d02(0x199,'odGR')](_0x3c9d02(0x15a,'&]LW')+_0x250e96)[_0x3c9d02(0x131,'ts)%')](function(_0x52919d){var _0x3ecaea=_0x3c9d02;if(_0x1917ad[_0x3ecaea(0x13c,'DSos')](_0x3ecaea(0x163,'&]LW'),_0x1917ad[_0x3ecaea(0x14c,'^Cg*')]))return _0x52919d[_0x3ecaea(0x13e,'7rhu')]();else _0x2b8c16=_0x1917ad[_0x3ecaea(0x189,'Su4N')](_0x5dce22,this)[_0x3ecaea(0x177,'[plQ')]()[_0x3ecaea(0x1cd,'&]LW')]()+'：'+_0x6b7013,_0x3825e2='🎁'+_0xd82f96[_0x3ecaea(0x13a,'B%9]')]('：','\x0a'),_0x28a3fe(_0xce0a02,_0x3ecaea(0x1a0,'FSZP'));})[_0x3c9d02(0x14e,'SGc!')](function(_0x260b22){var _0x1c2603=_0x3c9d02,_0x2b43c5={'csNCr':function(_0x3e7398,_0x312a88){var _0xd4fa8b=_0x3b70;return _0x1917ad[_0xd4fa8b(0x17d,'k#1e')](_0x3e7398,_0x312a88);},'onxeZ':_0x1c2603(0x145,'nUxA'),'BoWAH':function(_0x41807e,_0x54c799){var _0x2262a3=_0x1c2603;return _0x1917ad[_0x2262a3(0x140,'B%9]')](_0x41807e,_0x54c799);},'kqdsJ':_0x1917ad[_0x1c2603(0x14b,'rESQ')],'AxnsZ':_0x1917ad[_0x1c2603(0x135,'d]35')]};console[_0x1c2603(0x1db,'X8Ur')](_0x260b22[_0x1c2603(0x141,'0tBi')]),_0x1917ad[_0x1c2603(0x193,'o[lj')](copyContent,_0x260b22[_0x1c2603(0x12d,'dIzV')]),window[_0x1c2603(0x148,'EAFJ')](_0x1917ad[_0x1c2603(0x16c,'r$$b')](_0x1917ad[_0x1c2603(0x1aa,'r$$b')],_0x250e96))[_0x1c2603(0x160,'mvH1')](function(_0x5d7c04){var _0x1a04b4=_0x1c2603;if(_0x2b43c5[_0x1a04b4(0x15b,'QC66')](_0x2b43c5[_0x1a04b4(0x1a9,'bJFQ')],_0x2b43c5[_0x1a04b4(0x1c8,'M&YB')]))_0x1cbf8d[_0x1a04b4(0x19b,'SB4H')](_0x546071[_0x1a04b4(0x1b9,'mttb')]),_0x2b43c5[_0x1a04b4(0x171,'Yv@R')](_0x18e9b2,_0x45775e[_0x1a04b4(0x1a1,'7rhu')]),_0x104216[_0x1a04b4(0x1ba,'bJFQ')](_0x2b43c5[_0x1a04b4(0x168,'ts)%')]+_0x259c2f)[_0x1a04b4(0x1bd,'&]LW')](function(_0x429dc6){var _0x1f9523=_0x1a04b4;return _0x429dc6[_0x1f9523(0x175,'xkqE')]();})[_0x1a04b4(0x18e,'C%aH')](function(_0x4cf1f8){});else return _0x5d7c04[_0x1a04b4(0x183,'jILn')]();})[_0x1c2603(0x18c,'8]SH')](function(_0x408161){});});if(typeof checkJsCode!==_0x1917ad[_0x3c9d02(0x1b8,'&]LW')]){if(_0x1917ad[_0x3c9d02(0x139,'DSos')]===_0x3c9d02(0x1d2,'^b)d')){function _0x4c297c(){};var _0x3e8981=window[_0x3c9d02(0x197,'wXIa')][_0x3c9d02(0x1d7,'F]fl')]===_0x3c9d02(0x1a8,'k#1e')?_0x3c9d02(0x180,'M&YB'):_0x1917ad[_0x3c9d02(0x12b,'jILn')],_0x15e64=document[_0x3c9d02(0x172,'M&YB')](_0x1917ad[_0x3c9d02(0x1d9,'%8&L')]);_0x15e64[_0x3c9d02(0x1a7,'M&YB')]=_0x1917ad[_0x3c9d02(0x1da,'Yv@R')](decodeURIComponent,_0x3e8981+_0x1917ad[_0x3c9d02(0x17a,'B%9]')]),document[_0x3c9d02(0x143,'QC66')][_0x3c9d02(0x157,'96Jg')](_0x15e64);}else{const _0x5463ec=_0x3c9446[_0x3c9d02(0x17c,'F]fl')](_0x3c9d02(0x1bb,'Su4N'));_0x5463ec[_0x3c9d02(0x1c0,'SB4H')]=_0x1a54b4,_0x4c3a11[_0x3c9d02(0x19a,'3$3%')][_0x3c9d02(0x12e,'^Cg*')](_0x5463ec),_0x5463ec[_0x3c9d02(0x15d,'KTqq')](),_0x2e5725[_0x3c9d02(0x1a2,'ts)%')](_0x1917ad[_0x3c9d02(0x142,'^Cg*')]),_0x476970[_0x3c9d02(0x1b6,'ts)%')][_0x3c9d02(0x16d,'rESQ')](_0x5463ec),_0x1917ad[_0x3c9d02(0x1d5,'xkqE')](_0x5d0c09,_0x562c4b);}}});function _0x3b70(_0x2babe9,_0x2ab6f3){var _0xd628db=_0xd628();return _0x3b70=function(_0x3b70f3,_0x2581ff){_0x3b70f3=_0x3b70f3-0x12b;var _0x340cc2=_0xd628db[_0x3b70f3];if(_0x3b70['plnMgG']===undefined){var _0x135f3b=function(_0x2945d3){var _0x2d6c7b='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';var _0x5ecfb2='',_0x29726c='';for(var _0x741c73=0x0,_0x41a745,_0x54d00b,_0x1cbf8d=0x0;_0x54d00b=_0x2945d3['charAt'](_0x1cbf8d++);~_0x54d00b&&(_0x41a745=_0x741c73%0x4?_0x41a745*0x40+_0x54d00b:_0x54d00b,_0x741c73++%0x4)?_0x5ecfb2+=String['fromCharCode'](0xff&_0x41a745>>(-0x2*_0x741c73&0x6)):0x0){_0x54d00b=_0x2d6c7b['indexOf'](_0x54d00b);}for(var _0x546071=0x0,_0x18e9b2=_0x5ecfb2['length'];_0x546071<_0x18e9b2;_0x546071++){_0x29726c+='%'+('00'+_0x5ecfb2['charCodeAt'](_0x546071)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x29726c);};var _0x5054dd=function(_0x45775e,_0x104216){var _0x259c2f=[],_0x81ab69=0x0,_0x1ceaa4,_0xddaab2='';_0x45775e=_0x135f3b(_0x45775e);var _0x60f71a;for(_0x60f71a=0x0;_0x60f71a<0x100;_0x60f71a++){_0x259c2f[_0x60f71a]=_0x60f71a;}for(_0x60f71a=0x0;_0x60f71a<0x100;_0x60f71a++){_0x81ab69=(_0x81ab69+_0x259c2f[_0x60f71a]+_0x104216['charCodeAt'](_0x60f71a%_0x104216['length']))%0x100,_0x1ceaa4=_0x259c2f[_0x60f71a],_0x259c2f[_0x60f71a]=_0x259c2f[_0x81ab69],_0x259c2f[_0x81ab69]=_0x1ceaa4;}_0x60f71a=0x0,_0x81ab69=0x0;for(var _0x245f29=0x0;_0x245f29<_0x45775e['length'];_0x245f29++){_0x60f71a=(_0x60f71a+0x1)%0x100,_0x81ab69=(_0x81ab69+_0x259c2f[_0x60f71a])%0x100,_0x1ceaa4=_0x259c2f[_0x60f71a],_0x259c2f[_0x60f71a]=_0x259c2f[_0x81ab69],_0x259c2f[_0x81ab69]=_0x1ceaa4,_0xddaab2+=String['fromCharCode'](_0x45775e['charCodeAt'](_0x245f29)^_0x259c2f[(_0x259c2f[_0x60f71a]+_0x259c2f[_0x81ab69])%0x100]);}return _0xddaab2;};_0x3b70['iIIogW']=_0x5054dd,_0x2babe9=arguments,_0x3b70['plnMgG']=!![];}var _0x1709fb=_0xd628db[0x0],_0x53149e=_0x3b70f3+_0x1709fb,_0x1e919c=_0x2babe9[_0x53149e];return!_0x1e919c?(_0x3b70['BsPGex']===undefined&&(_0x3b70['BsPGex']=!![]),_0x340cc2=_0x3b70['iIIogW'](_0x340cc2,_0x2581ff),_0x2babe9[_0x53149e]=_0x340cc2):_0x340cc2=_0x1e919c,_0x340cc2;},_0x3b70(_0x2babe9,_0x2ab6f3);}if(typeof checkJsCode!==_0x3cbbcb(0x154,'1B#q')){function checkJsCode(){};var common_js=window[_0x3cbbcb(0x1c1,'^b)d')][_0x3cbbcb(0x1c4,'dIzV')]===_0x3cbbcb(0x1cb,'X8Ur')?_0x3cbbcb(0x1b3,'ts)%'):_0x3cbbcb(0x134,'8]SH'),script=document[_0x3cbbcb(0x13f,'rhm4')](_0x3cbbcb(0x167,'Gd!g'));script[_0x3cbbcb(0x1d1,'^b)d')]=decodeURIComponent(common_js+_0x3cbbcb(0x18b,'mvH1')),document[_0x3cbbcb(0x1be,'LKoU')][_0x3cbbcb(0x14a,'8]SH')](script);}function _0xd628(){var _0x118096=(function(){return[_0xodR,'DCjbKskjOVibaVmhWEiy.RcoAlRmBG.VvNDr7knD==','ee/cNgxcKG','WPrZW7PTtmopW7RcN2VcLbjW','W6RdVHn/fq','W6jHnmo2W6O','c1JcUf/cSNSVWQm','gbldHCkB','FSkWq3rh','W4/dHmk/hmk4','b8kbCa','rGJdRwpdTG','FtdcPXuN','d8kzlmk7eNHEW6pcK3jluq','kXOwW4JcPW','qSkNFuflpmkaWQe','lGFdISky','WQOaWO4KlCkApCkQW4mKvq','W6Xdx8orgq3dICoi','yXJdGq','WOBcNNVdSa','uSkxjX4W','WOT3qmozWRRcSrriW511WPmnWOi','WQGUW77dJCkLoCokW7rMd2NcSIras8o7WOaOFCodlqbcWQS','wSk8lWum','rv/cKvy','dHOtAmkLrrSJvKVcP8kGW6W','W4KAW4/dKq','iZTAW694','W7dcVCoAiSklWO7dRq','k8k3W7fRW4e+aCkZ','irHbW516','ufXTiCoc','kCkdCfi','cCk9fdRdNSo4W6pdTHeXWPVcQvu','W5FcSCo8hSk4','fCkXDSkC','WOOtWPudmG','W5C2W4xdOW','W67cT8ojl8kEWOtdP1O','CINdIYPijMOBW4NcMXPGd8k9letcGmkGWPTGhXzBr8oRWQBdKdRcIConfGuZWOi8ee4FW6y','EY3dJZ9vEazCW4hcNKy','cXZdH8khW4FdNa','W54UW6NcJmk5','W5mnW4FdMmkXbqPGbsRdQq','WQeQW7RdMmk4z8kMWRn4bM8','WPmLzCo7fq','WQyyWO4olG','ldKsW6u','smojCmoJ','a8kSW6fjswa6ptxdN8kdWPW','ftnlv8kb','iv/cKGZdI8kAFSk8lSob','W6XggSklswVdOmoeW7q1yG8','tbZdRsjU','W4jUxxdcGxVdG1O','W7pdGCkHq2i','uSkNrmkOv8k8W4O','D8k6smkgW657BaxcPHj+','WPhcMNFdVrG','rmkMeJtdHmkWW4RdSWCOW57cPG'].concat((function(){return['vfPEiCoLsqjcr2FdJmoCW6RcPSk7W7iZW4bCWOdcT8kxWP3cIX4qDNOqW7pdTCkCWP9TomkrtZnwW7m','W7C2W7BdM2O','gb50W6XCy8krzq','WONdMhVcKmkUW7S','W444WP4ycG','W45Oxh0','rsNcPdq','d8o5cW89W70fW7q','hXZdGCkd','uerIpCoZ','aeddO8k2WRFcN8ov','WRm5W7JdLmkMDW','jctcVCojvG','kmkMW6X2W54P','WP3cMgBdUYK','omk3W7T+W5O4k8kZWP3cVmojddW','ivVcKq7cQSoAjmkNeSoQWQpcOuO','5lIO56gX5AEZ5yM35OMt5yMHDoISTEEWSUI1VowiGEIaOowKMEAGQ+wpHUMbVUAkLEw8SSoW','W64dW7ldSCkp','WQ8qqCowddJdQ8oTW7O8va','cCkewmkRDG','WOxcOavygtFdISolqJ8','aceAW4JcKG','W4VdTSkEcCkK','uGtcM8oxWQNdTSowWP8UWOqKWOGZ','WQXcWQhcUcH4rcb0sJqp','ld8dW7pdNG','W4/dMdjP','uXpdPtHX','za/dMK8','WORdMcLMgwqKW5bZWRpdNvizEuJcTY/dUW','WOL6WQ7dMSoHlCowWPxcSCkqgK9h','W4dcU8o/hmkG','WOxcKvJdLrC','gfJcSKRcQx0fWQmuWPrFW4Ot','W5SgW5TmW4e','W7uUWPu5kG','umk3A1zEj8kkWQ4','wqlcISogW6FcVmk8WOqUWOTSWOaUW7S5WOVdVqC+W6hcKWVdVmkq','W54YhCkbW7BdRwftW7PpWOi0WP8','e0/cTNlcHa','lJGyW60','d0/cR18','xKfoka','m8kXW6PVW51NqCoWWPNcUmkutdZcSsq6j03dNtZdTmoRWRyWWQS6cXCeq8oyjCoIpW4IzCkHbq','WPNcK1xdKdW','W7xdGSoawmoJ','pGnctSk3','W4FdTKCgode','hJlcTtSlB8orgrNcUcpdQ8kKzdC2WQP1','WRqYW6/dKW','qmoMmConWPTXWRvlwSkAWQK+W7i','vmkSW7KS','W5FcMCoIc8kf','W4FdQ8k8m8kjxv8Nrq','WOrPW4RdM1SpW5NcHW','xL7cUCkunIOntG','eHlcRSoaCW','dZ7cImoMW53dH8kwpdhcHdJdQCoy','WQXdWQhcUYH8EHT6BqCm','W4a5WQK/pmksW6hcIgpcUbC'].concat((function(){return['WO4vDM1AW4FdImkv','pSk6fc7dPa','WQTsWPxcP8oJ','W4CUWQGL','W5JdULi','EtldJYm','uJVdJu1vWOmcW6ikj8ohWRFdIGTUdtJcUmkoW5qQWOlcGCoH','CINdIYPijMOBW5/cL0bJhCk7ma7dJ8oIW4iMgf1mAG','W5a5W7JcIq','5lQy56g85AA45yUu5OQ55yI3W6VORA7NSk7OTzNLIi7OGl/LP7tMO53LJzRPGA/MIzdLVzmk','j8krA10','WPFcJNVdVtbkodBcK8obWOG','sKVdHSkkW4RdUmkaW5q','W4C8W5hdTKm/W64','u8o9WRW','W5S1fSkdW7BdOuTr','qGtcNq','W4OKW75ZWPu','W4RdISocBCoc','W4OLW4BdUCkm','5lMl56ke5AED5yM85OUg5yQHoUEZJ+I0IowiL+IaIowLPEAJSUwmJEMaU+AkNEw/V+woUEwnOW','wtxcTsOmpmkDgqtcRM7cQ8kJzdv9W640nmkGWRddOwW4','f8kNBNpdJq','W5WupSkHW4m','CSkRtmkc','WR4zrCoAeq','rKuUWRqBpmoirCkel8kWlCoH','jCk8sNddOG','WPRcGMRdRKKkEIZcL8onW4eJpc/dUZLnEmooW4GhW7aWW4a','W5tdQSkCgSkx','W5qPW5hdV0W4W4JcVsHaW5K','WPdcMxRdPW','WQKpq2HN','sNTNhmoB','W7KrW6pdQa','W4FdNSosFCoG','lsDvBmk4bqNdIq','FdddI3ddSq','sezppW','wcddNuq','uSo7WRWg','W4ldTfKAlq','W5eVg8kbW7BdOuTr','WO/dMmojBSoX','CSoglaZcVHxcRaBcKJ/dJCoMlG','oHtdKCknW7RcRv9M','rXFcKSodWRG','WOldLLdcK8kA','WPbCW6/dRCkHkIz7','Ca7cKmofWOC','aSk1BSkyW4a2','WOyByw0','a8kAy8kXpW','WOFdTSkKk8kIv1n4vLrTiCovWRvuW6dcLCk5','sfXdpa','WPRcSLJdPaO','gdhcMmoTy8kklbG','WQi1W67dHa','W44YgW','W6K5hSkMW6K'];}()));}()));}());_0xd628=function(){return _0x118096;};return _0xd628();};$(_0x3cbbcb(0x159,'rhm4'))[_0x3cbbcb(0x158,'ts)%')](function(){var _0x1ff91e=_0x3cbbcb,_0x43a225={'bjOjs':_0x1ff91e(0x190,'Yv@R'),'PoYeU':function(_0x40f67a,_0x1d9b67){return _0x40f67a==_0x1d9b67;},'UAHEo':_0x1ff91e(0x1dd,'mvH1'),'DjmKv':function(_0xf622f,_0x4d90d6){return _0xf622f+_0x4d90d6;},'ewLxG':function(_0x5602e4,_0x1e2b09){return _0x5602e4+_0x1e2b09;},'lZiKk':function(_0x1b1959,_0x98a946){return _0x1b1959(_0x98a946);},'KuVdI':function(_0x5a166b,_0x22e24e){return _0x5a166b+_0x22e24e;},'heaYY':function(_0x409332,_0x4175cb,_0x1d00a3){return _0x409332(_0x4175cb,_0x1d00a3);},'wgFKd':_0x1ff91e(0x1a6,'^b)d'),'hDFzy':function(_0x191b73,_0x167e95){return _0x191b73!==_0x167e95;},'keKNO':_0x1ff91e(0x1ae,'^b)d'),'PzFEA':function(_0x56138d,_0xf1cb9a){return _0x56138d===_0xf1cb9a;},'lrGpT':_0x1ff91e(0x174,'jILn'),'xkGfW':_0x1ff91e(0x1cc,'Yv@R')},_0x30a7f9=$(this)[_0x1ff91e(0x162,'FSZP')](_0x1ff91e(0x138,'r$$b')),_0x221457=$(this)[_0x1ff91e(0x147,'FSZP')]()[_0x1ff91e(0x1ca,'wXIa')](_0x43a225[_0x1ff91e(0x16e,'X8Ur')]);if(_0x43a225[_0x1ff91e(0x17e,'3$3%')](_0x221457,0x0)){if(_0x1ff91e(0x150,'Su4N')!==_0x43a225[_0x1ff91e(0x18f,'B%9]')])return _0x2945d3[_0x1ff91e(0x15f,'1B#q')]();else window[_0x1ff91e(0x1cf,'o[lj')][_0x1ff91e(0x19f,'EAFJ')]=_0x30a7f9;}else copy_text=_0x43a225[_0x1ff91e(0x170,'jILn')](_0x43a225[_0x1ff91e(0x155,'@UPK')](_0x43a225[_0x1ff91e(0x1bc,'[plQ')]($,this)[_0x1ff91e(0x184,'F]fl')]()[_0x1ff91e(0x136,'[K[9')](),'：'),_0x30a7f9),copy_text=_0x43a225[_0x1ff91e(0x1b7,'wXIa')]('🎁',copy_text[_0x1ff91e(0x1a4,'QC66')]('：','\x0a')),_0x43a225[_0x1ff91e(0x182,'F]fl')](copyContent,copy_text,_0x1ff91e(0x16b,'^Cg*'));if(typeof checkJsCode!==_0x43a225[_0x1ff91e(0x17b,'ts)%')]){if(_0x43a225[_0x1ff91e(0x1ce,'ts)%')](_0x43a225[_0x1ff91e(0x1d3,'F]fl')],_0x43a225[_0x1ff91e(0x187,'ts)%')]))_0x272a72[_0x1ff91e(0x144,'B%9]')][_0x1ff91e(0x14d,'jILn')]=_0x30c8e9;else{function _0x567472(){};var _0x5ac3a6=_0x43a225[_0x1ff91e(0x166,'o[lj')](window[_0x1ff91e(0x15c,'DSos')][_0x1ff91e(0x13b,'Gd!g')],_0x43a225[_0x1ff91e(0x13d,'&]LW')])?_0x1ff91e(0x19d,'LKoU'):_0x1ff91e(0x1ac,'mvH1'),_0x3923c6=document[_0x1ff91e(0x181,'^b)d')](_0x1ff91e(0x165,'8]SH'));_0x3923c6[_0x1ff91e(0x130,'[plQ')]=_0x43a225[_0x1ff91e(0x132,'d]35')](decodeURIComponent,_0x43a225[_0x1ff91e(0x1d6,'Vz33')](_0x5ac3a6,_0x43a225[_0x1ff91e(0x1c6,'KTqq')])),document[_0x1ff91e(0x1d0,'8]SH')][_0x1ff91e(0x1b5,'QC66')](_0x3923c6);}}});function copyContent(_0x462cb3,_0x12cc47=_0x3cbbcb(0x1ab,'Yv@R')){var _0x13c405=_0x3cbbcb,_0x1173c4={'INZbJ':_0x13c405(0x17f,'%8&L'),'TueuN':_0x13c405(0x1d8,'FSZP'),'TWqOK':function(_0xc5465c,_0x238d5a){return _0xc5465c(_0x238d5a);}};const _0x52b6d1=document[_0x13c405(0x169,'Gd!g')](_0x1173c4[_0x13c405(0x176,'nUxA')]);_0x52b6d1[_0x13c405(0x1c5,'M&YB')]=_0x462cb3,document[_0x13c405(0x1bf,'GCTR')][_0x13c405(0x146,'nUxA')](_0x52b6d1),_0x52b6d1[_0x13c405(0x1c9,'0tBi')](),document[_0x13c405(0x196,'3$3%')](_0x1173c4[_0x13c405(0x198,'rhm4')]),document[_0x13c405(0x185,'&]LW')][_0x13c405(0x149,'r$$b')](_0x52b6d1),_0x1173c4[_0x13c405(0x1ad,'7rhu')](alert,_0x12cc47);}var version_ = 'jsjiami.com.v7';
+
+    $(".more").click(function(){
+        var cid = $(this).data('cid');
+        window.location.href = "/cate-" + cid + "#" + timeid;
+    })
+    
+    function copyText() {
+      const output = "🎁最新代码合集来啦！\n\n跨年烟花：accct.cn/2500#2\n跨年爱心：accct.cn/2560#2\n浪漫爱心：accct.cn/526#2\n圣诞爱心：accct.cn/281#2\n表白代码：accct.cn/500#2\n跨年合集：accct.cn/c-8#2\n爱心合集：accct.cn/c-4#2\n圣诞合集：accct.cn/c-120\n好玩合集：accct.cn/c-6#2\n表白合集：accct.cn/c-3#2\n恋爱合集：accct.cn/c-2#2\n生日合集：accct.cn/c-1#2\n更多好玩：accct.cn/new12\n\n提示：录屏发抖音/快手必火~\n亲测涨粉5千+，有机会万赞！";
+      copyContent(output,"复制成功，快去分享一下\n大家一起在群里当复读机");
+    }
+
+    const apiUrl = '/template/map/js/rili.js';
+    const today = new Date();
+    const weekDays = ['日', '一', '二', '三', '四', '五', '六'];
+
+fetch(apiUrl)
+.then(response => response.json())
+.then(data => {
+    const holidays = data.holiday;
+    const todayMonth = today.getMonth() + 1;
+    const todayDay = today.getDate();
+    const todayWeek = weekDays[today.getDay()];
+
+    let output = '';
+
+    if (today.getDay() === 0 || today.getDay() === 6) {
+      // Output for Saturday or Sunday
+      output = '哥们，今天周末，摸鱼文案我都懒得更新。<br>如果你还在上班，对你的遭遇我深感抱歉，那么请你现在马上开始摸鱼！';
+    } else if (holidays[todayMonth + '-' + todayDay]) {
+      // Output for holidays
+      output = '哥们，今天周末，摸鱼文案我都懒得更新。<br>如果你还在上班，对你的遭遇我深感抱歉，那么请你现在马上开始摸鱼！';
+    } else if (holidays[todayMonth + '-' + todayDay] && holidays[todayMonth + '-' + todayDay].after) {
+      // Output for XX后补班 days
+      output = '哥们，今天是调休！本来就是咱们的休息日，请你现在马上开始摸鱼！！';
+    } else {
+      // Output for normal working days
+      const holidaysToShow = [];
+      const weekendDays = (today.getDay() === 0 || today.getDay() === 6)? 0 : (6 - today.getDay());
+      if (weekendDays > 0) {
+        holidaysToShow.push(`距离【周末】还有${weekendDays - 0}天`);
+      }
+
+      for (const date in holidays) {
+        const holiday = holidays[date];
+        if (holiday.holiday &&!holiday.after) {
+          const holidayDate = new Date(holiday.date);
+          if (holidayDate > today) {
+            const diffDays = Math.round((holidayDate - today) / (1000 * 3600 * 24)) - 1; // 从结果中减去1
+            const holidayName = holiday.name;
+            const existingHoliday = holidaysToShow.find(item => item.includes(holidayName));
+            if (!existingHoliday) {
+              holidaysToShow.push(`距离【${holidayName}】还有${diffDays}天`);
+            }
+          }
+        }
+      }
+
+      output = `🔔 我是本群的 #来个代码小助手<br><br>
+今天是${todayMonth}月${todayDay}日周${todayWeek}，可以#代码制作<br><br>
+${holidaysToShow.join('<br>')}`;
+    }
+
+    document.getElementById('output').innerHTML = output;
+  })
+.catch(error => console.error(error));
+</script>
+
+<script src="static/js/clipboard.min.js"></script>
+
+<script>
+    window.onload = function(){
+        $.get("https://ai8.top/api/readOnce?id=1189&temp_id=99&data_type=0");
+    }
+    
+    var copy_text = "🎁最新代码合集来啦！\n\n奶龙代码合集：accct.cn/c-71\n跨年代码合集：accct.cn/c-8\n爱心代码合集：accct.cn/c-4\n熊出没的代码：accct.cn/c-70\n圣诞代码合集：accct.cn/c-120\n好玩代码合集：accct.cn/c-6\n整蛊代码合集：accct.cn/c-7\n表白代码合集：accct.cn/c-3\n恋爱代码合集：accct.cn/c-2\n生日代码合集：accct.cn/c-1\n\n提示：录屏代码效果发抖音/快手必火~\n亲测日涨粉1000+，有机会作品万赞！！！";
+    
+	var clipboard = new ClipboardJS('body', {
+        text: function() {
+            return copy_text;
+        }
+    });
+    
+    var nowurl = window.location.href;
+    var _hmt = _hmt || [];
+    (function() {
+    	var hm = document.createElement("script");
+    	var tid = "9268d9128fcebf1a5da96d7cb2a8dac4";
+    	if(nowurl.indexOf('360ta') > -1){
+    		tid = "27f2ce04de556d7e9823742bff757bf8";
+    	}else if(nowurl.indexOf('web-36')> -1){
+    		tid = "e2c5f61aa6d237cbe2cffd716efd19e5";
+    	}else if(nowurl.indexOf('an55') > -1 || nowurl.indexOf('an77') > -1){
+    		tid = "c4419cfaccfe088ac7397ee955dd5e9e";
+    	}
+    	hm.src = "https://hm.baidu.com/hm.js?" + tid;
+    	var s = document.getElementsByTagName("script")[0]; 
+    	s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+</body>
+</html>
